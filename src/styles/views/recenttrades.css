@@ -1,0 +1,21 @@
+/* .recenttrades-section table tbody {
+  height: 65rem;
+} */
+.recenttrades-section {
+  width: 100%;
+  padding: 5rem 0;
+}
+.recenttrades-section h1 {
+  font-size: 3.5rem;
+  color: var(--white);
+  margin: 0 0 2.5rem 0;
+}
+
+.trade-blob-1 {
+  width: 65vw;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}

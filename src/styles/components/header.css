@@ -1,0 +1,112 @@
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #25282d;
+  border: 1px solid rgba(245, 247, 250, 0.06);
+  backdrop-filter: blur(2.5px);
+  z-index: 1000;
+}
+.header-grid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.header-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-left > img {
+  height: 1.5rem;
+  object-fit: contain;
+}
+.header-left > a {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0 1.5rem 0 0;
+}
+.header-right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-right .connect-wallet-link {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin: 0 2.5rem;
+}
+.header-right .connect-wallet-link img {
+  width: 1.9rem;
+  margin: 0 0.75rem 0 0;
+}
+.header-right .connect-wallet-link span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.header-right .icon-link {
+  font-size: 1.75rem;
+  color: var(--white);
+  margin: 0 3rem 0 0;
+  cursor: pointer;
+}
+.cart-icon-link {
+  font-size: 1.75rem;
+  color: var(--white);
+  margin: 0 3rem 0 0;
+  cursor: pointer;
+  position: relative;
+}
+.cart-icon-link:hover {
+  color: var(--white);
+}
+.cart-icon-link span {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 500;
+  border-radius: 1000px;
+  border: 2px solid var(--white);
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background: var(--grd-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 2rem;
+  height: 2rem;
+}
+.light-dark-theme-box {
+  width: max-content;
+  height: max-content;
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+  background-color: #2e3035;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.theme-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.theme-icon svg {
+  font-size: 1.5rem;
+  color: #828386;
+}
+.active-theme.theme-icon {
+  background: var(--grd-text);
+}
+.active-theme.theme-icon svg {
+  color: var(--white);
+}
