@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 // Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +10,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Mousewheel, Autoplay, FreeMode } from "swiper";
-import { gsap } from "gsap";
 
 // Assets
 import WelcomeImg from "../assets/img/welcome-img.png";
@@ -70,15 +69,30 @@ import { Accordion, Nav, Tab } from "react-bootstrap";
 import CollectionsCard from "../components/CollectionsCard";
 import Footer from "../components/Footer";
 import { ThemeContext } from "../ThemeContext";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 
 const Home = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, CSSRulePlugin);
+
+  const goToFAQs = () => {
+    gsap.to(window, {
+      duration: 0,
+      scrollTo: { y: "#faqs-section", offsetY: 100 },
+    });
+  };
+
   return (
     <div className="extract-app">
       <main className="home-page">
-        <img className="home-blob-1" src={HomeBlob1} alt="HomeBlob" />
+        {isDarkTheme ? (
+          <img className="home-blob-1" src={HomeBlob1} alt="HomeBlob" />
+        ) : null}
         <img className="home-blob-2" src={HomeBlob2} alt="HomeBlob" />
-        <Header />
+        <Header goToFAQs={goToFAQs} />
         <section className="welcome-section">
           <div className="box">
             <div className="welcome-content-box">
@@ -144,7 +158,7 @@ const Home = () => {
                           <h6>44.65 ₳</h6>
                         </div>
                       </div>
-                      <button className="fill-grd-btn">Get it</button>
+                      <button className="fill-grd-btn">Explore</button>
                     </div>
                   </SwiperSlide>
 
@@ -169,7 +183,7 @@ const Home = () => {
                           <h6>44.65 ₳</h6>
                         </div>
                       </div>
-                      <button className="fill-grd-btn">Get it</button>
+                      <button className="fill-grd-btn">Explore</button>
                     </div>
                   </SwiperSlide>
 
@@ -194,7 +208,7 @@ const Home = () => {
                           <h6>44.65 ₳</h6>
                         </div>
                       </div>
-                      <button className="fill-grd-btn">Get it</button>
+                      <button className="fill-grd-btn">Explore</button>
                     </div>
                   </SwiperSlide>
 
@@ -219,7 +233,7 @@ const Home = () => {
                           <h6>44.65 ₳</h6>
                         </div>
                       </div>
-                      <button className="fill-grd-btn">Get it</button>
+                      <button className="fill-grd-btn">Explore</button>
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -368,9 +382,14 @@ const Home = () => {
           </div>
         </section>
         <section className="collections">
-          <img className="home-blob-3" src={HomeBlob3} alt="HomeBlob" />
+          {isDarkTheme ? (
+            <img className="home-blob-3" src={HomeBlob3} alt="HomeBlob" />
+          ) : null}
           <img className="home-blob-4" src={HomeBlob4} alt="HomeBlob" />
-          <img className="home-blob-5" src={HomeBlob5} alt="HomeBlob" />
+
+          {isDarkTheme ? (
+            <img className="home-blob-5" src={HomeBlob5} alt="HomeBlob" />
+          ) : null}
           <div className="box">
             <div className="collections-content">
               <Tab.Container defaultActiveKey="new" transition={false}>
@@ -449,12 +468,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* <div className={isDarkTheme ? "dark theme-box" : "light theme-box"}>
-          <h1>My App</h1>
-          <button onClick={toggleTheme}>
-            {isDarkTheme ? "Switch to Light Theme" : "Switch to Dark Theme"}
-          </button>
-        </div> */}
         <section className="activity">
           <div className="box">
             <div className="activity-content">
@@ -818,7 +831,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="faq">
+        <section className="faq" id="faqs-section">
           <div className="box">
             <div className="faq-grid">
               <img src={FaqImg} alt="FaqImg" />

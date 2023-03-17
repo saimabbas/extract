@@ -1,10 +1,13 @@
-import React, { useState, useSyncExternalStore } from "react";
+import React, { useState, useContext } from "react";
 
 import "../styles/views/home.css";
+import { ThemeContext } from "../ThemeContext";
 import HeartIcon from "../assets/img/heart-icon-outline.svg";
+import HeartIcon2 from "../assets/img/heart-icon-outline-2.svg";
 import HeartIconFilled from "../assets/img/heart-icon-filled.svg";
 
 const CollectionsCard = (props) => {
+  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   const [isHeartFilled, setIsHeartFilled] = useState(false);
   return (
     <div className="collections-card">
@@ -21,13 +24,25 @@ const CollectionsCard = (props) => {
             alt={HeartIcon}
           />
         ) : (
-          <img
-            onClick={() => {
-              setIsHeartFilled(true);
-            }}
-            src={HeartIcon}
-            alt={HeartIcon}
-          />
+          <>
+            {isDarkTheme ? (
+              <img
+                onClick={() => {
+                  setIsHeartFilled(true);
+                }}
+                src={HeartIcon}
+                alt={HeartIcon}
+              />
+            ) : (
+              <img
+                onClick={() => {
+                  setIsHeartFilled(true);
+                }}
+                src={HeartIcon2}
+                alt={HeartIcon}
+              />
+            )}
+          </>
         )}
       </div>
       <div className="cc-details-box">

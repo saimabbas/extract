@@ -25,13 +25,19 @@ import BuyIcon from "../assets/img/buy-icon.svg";
 import HomeBlob1 from "../assets/img/home-blob-1.png";
 import TradeBlob1 from "../assets/img/trade-blob-1.png";
 import Footer from "../components/Footer";
+import { ThemeContext } from "../ThemeContext";
 
 const RecentTrades = () => {
+  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   return (
     <div className="extract-app">
       <div className="home-page">
-        <img className="home-blob-1" src={HomeBlob1} alt="HomeBlob" />
-        <img className="trade-blob-1" src={TradeBlob1} alt="HomeBlob" />
+        {isDarkTheme ? (
+          <img className="home-blob-1" src={HomeBlob1} alt="HomeBlob" />
+        ) : null}
+        {isDarkTheme ? (
+          <img className="trade-blob-1" src={TradeBlob1} alt="HomeBlob" />
+        ) : null}
         <Header />
         <section className="recenttrades-section">
           <div className="box">

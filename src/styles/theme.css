@@ -1,0 +1,45 @@
+.light-theme {
+  --grd-text: linear-gradient(135deg, #00ffaa, #4579f5);
+  --grd-2: linear-gradient(0, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  --main-bg: #feffff;
+  --main-bg-2: #fafafa;
+  --main-bg-3: #f2f2f3;
+  --main-bg-4: rgba(224, 224, 255, 0.35);
+  --main-bg-5: #adafb2;
+  --main-bg-6: #212429;
+  --main-bg-7: #f2f2f3;
+  --main-bg-8: #fafafa;
+  --main-bg-9: #f5f5f6;
+  --text-color-1: #212429;
+  --text-color-2: #fff;
+  --border-color-1: #eeeeee;
+  --border-color-2: rgba(47, 49, 50, 0.05);
+  --box-shadow-1: unset;
+}
+.dark-theme {
+  --grd-text: linear-gradient(135deg, #00ffff, #4579f5);
+  --grd-2: linear-gradient(0deg, #25292f 0%, rgba(37, 41, 47, 0) 100%);
+  --main-bg: #212429;
+  --main-bg-2: #212429;
+  --main-bg-3: #2e3035;
+  --main-bg-4: rgba(224, 224, 255, 0.05);
+  --main-bg-5: rgba(224, 224, 255, 0.05);
+  --main-bg-6: #feffff;
+  --main-bg-7: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.06) 0%,
+    rgba(245, 247, 250, 0.0001) 100%
+  );
+  --main-bg-8: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.06) 0%,
+    rgba(245, 247, 250, 0.0001) 100%
+  );
+  --main-bg-9: rgba(255, 255, 255, 0.15);
+  --text-color-1: #fff;
+  --text-color-2: #212429;
+  --border-color-1: #323539;
+  --border-color-2: transparent;
+  --box-shadow-1: 0px 1px 2px rgb(9 13 20 / 24%),
+    -2px -2px 4px rgb(224 224 255 / 2%), 0px 4px 4px rgb(9 13 20 / 12%);
+}

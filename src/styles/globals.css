@@ -14,11 +14,8 @@
   --white: #fff;
   --black: #000;
   --main-bg: #212429;
-  --grd-text: linear-gradient(135deg, #00ffff, #4579f5);
+  --grd-text: linear-gradient(135deg, #00ffff, #4579f5, #9c42f5);
   --grd-bg: linear-gradient(135deg, #00ffaa, #4579f5, #9c42f5);
-
-  --primary-color: #0077cc;
-  --secondary-color: #f8f8f8;
 }
 
 .box {
@@ -36,7 +33,6 @@ html,
 body {
   width: 100%;
   max-width: 100%;
-  scroll-behavior: smooth;
 }
 section,
 section .box {
@@ -72,7 +68,7 @@ section .box {
   padding: 0.9rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
-  background-color: #2d2f34;
+  background-color: var(--main-bg-3);
   border-radius: 12px;
   margin: 0 2.5rem;
 }
@@ -87,7 +83,7 @@ section .box {
   border: 0;
   padding: 0 1rem;
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--text-color-1);
   font-weight: 300;
 }
 .outline-grd-btn {
@@ -120,7 +116,7 @@ section .box {
 .outline-grd-btn div {
   width: max-content;
   height: max-content;
-  background-color: #282a31;
+  background-color: var(--main-bg);
   border-radius: 1.2rem;
   padding: 1.15rem 4.5rem;
   z-index: 105;

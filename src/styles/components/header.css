@@ -2,8 +2,8 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #25282d;
-  border: 1px solid rgba(245, 247, 250, 0.06);
+  background-color: var(--main-bg-2);
+  border: 1px solid var(--border-color-1);
   backdrop-filter: blur(2.5px);
   z-index: 1000;
 }
@@ -20,14 +20,16 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-.header-left > img {
+.header-left > a > img {
   height: 1.5rem;
   object-fit: contain;
 }
-.header-left > a {
+.header-left > a,
+.header-left p {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--text-color-1);
   margin: 0 1.5rem 0 0;
+  cursor: pointer;
 }
 .header-right {
   width: 100%;
@@ -51,29 +53,29 @@ header {
 }
 .header-right .icon-link {
   font-size: 1.75rem;
-  color: var(--white);
+  color: var(--text-color-1);
   margin: 0 3rem 0 0;
   cursor: pointer;
 }
 .cart-icon-link {
   font-size: 1.75rem;
-  color: var(--white);
+  color: var(--text-color-1);
   margin: 0 3rem 0 0;
   cursor: pointer;
   position: relative;
 }
 .cart-icon-link:hover {
-  color: var(--white);
+  color: var(--text-color-1);
 }
 .cart-icon-link span {
   font-size: 1.2rem;
-  color: var(--white);
+  color: #fff;
   font-weight: 500;
   border-radius: 1000px;
   border: 2px solid var(--white);
   position: absolute;
-  top: -1rem;
-  right: -1rem;
+  top: -0.85rem;
+  right: -0.85rem;
   background: var(--grd-text);
   display: flex;
   align-items: center;
@@ -87,7 +89,7 @@ header {
   height: max-content;
   padding: 0.5rem;
   border-radius: 1.2rem;
-  background-color: #2e3035;
+  background-color: var(--main-bg-3);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -108,5 +110,5 @@ header {
   background: var(--grd-text);
 }
 .active-theme.theme-icon svg {
-  color: var(--white);
+  color: #fff;
 }

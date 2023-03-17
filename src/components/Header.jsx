@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "../styles/components/header.css";
 
-import HeaderLogo from "../assets/img/logo-1.png";
+import HeaderLogo1 from "../assets/img/logo-1.png";
+import HeaderLogo2 from "../assets/img/logo-2.png";
 import ConnectWalletImg from "../assets/img/connect-wallet.svg";
 
 import {
@@ -21,43 +22,99 @@ import {
   BsSun,
   BsTwitter,
 } from "react-icons/bs";
+import { ThemeContext } from "../ThemeContext";
+import { Link, useLocation } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
-const Header = () => {
+const Header = (props) => {
+  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <header>
       <div className="box">
         <div className="header-grid">
           <div className="header-left">
-            <img src={HeaderLogo} alt="HeaderLogo" />
+            <Link to="/">
+              {isDarkTheme ? (
+                <img src={HeaderLogo1} alt="HeaderLogo" />
+              ) : (
+                <img src={HeaderLogo2} alt="HeaderLogo" />
+              )}
+            </Link>
+
             <div className="search-input-box">
               <BsSearch />
               <input type="text" placeholder="Search" />
             </div>
             <a href="#">Collections</a>
-            <a href="#">Documents</a>
-            <a href="#">FAQ</a>
+            <a target={"_blank"} href="https://tcclabs.github.io/extract/">
+              Documents
+            </a>
+            <Link to="/#faqs-section" onClick={props.goToFAQs}>
+              FAQs
+            </Link>
           </div>
           <div className="header-right">
-            <a href="#" className="icon-link">
+            <a
+              target={"_blank"}
+              href="https://twitter.com/TCCCNFT"
+              className="icon-link"
+            >
               <BsTwitter />
             </a>
-            <a href="#" className="icon-link">
+            <a
+              target={"_blank"}
+              href="https://discord.gg/2HMZ8s9E6T"
+              className="icon-link"
+            >
               <BsDiscord />
             </a>
             <a href="#" className="cart-icon-link">
-              <BsCart3 />
+              <BsCartFill />
               <span>3</span>
             </a>
-            <a href="#" className="icon-link">
+            <Link to="/favourites" className="cart-icon-link">
               <BsHeartFill />
-            </a>
+            </Link>
             <div className="light-dark-theme-box">
-              <div className="theme-icon">
-                <BsSun />
-              </div>
-              <div className="theme-icon active-theme">
-                <BsMoon />
-              </div>
+              {isDarkTheme ? (
+                <div
+                  className="theme-icon"
+                  onClick={() => {
+                    toggleTheme();
+                  }}
+                >
+                  <BsSun />
+                </div>
+              ) : (
+                <div
+                  className="theme-icon active-theme"
+                  onClick={() => {
+                    toggleTheme();
+                  }}
+                >
+                  <BsSun />
+                </div>
+              )}
+              {isDarkTheme ? (
+                <div
+                  className="theme-icon active-theme"
+                  onClick={() => {
+                    toggleTheme();
+                  }}
+                >
+                  <BsMoon />
+                </div>
+              ) : (
+                <div
+                  className="theme-icon"
+                  onClick={() => {
+                    toggleTheme();
+                  }}
+                >
+                  <BsMoon />
+                </div>
+              )}
             </div>
             <a href="#" className="connect-wallet-link">
               <img src={ConnectWalletImg} alt="ConnectWalletImg" />

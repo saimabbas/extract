@@ -1,4 +1,6 @@
+import React, { useContext } from "react";
 import "./styles/globals.css";
+import "./styles/theme.css";
 import {
   BrowserRouter as Switch,
   Routes,
@@ -10,19 +12,21 @@ import LinksPage from "./views/Links";
 import Home from "./views/Home";
 import Favourites from "./views/Favourites";
 import RecentTrades from "./views/RecentTrades";
+import { ThemeContext } from "./ThemeContext";
 
 function App() {
+  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   return (
-    <>
+    <div className={isDarkTheme ? "dark-theme" : "light-theme"}>
       <Switch>
         <Routes>
-          <Route exact path="/" element={<LinksPage />} />
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/links" element={<LinksPage />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/favourites" element={<Favourites />} />
           <Route exact path="/recenttrades" element={<RecentTrades />} />
         </Routes>
       </Switch>
-    </>
+    </div>
   );
 }
 
