@@ -1,0 +1,314 @@
+.earn-head-section {
+  width: 100%;
+  margin: 5rem 0 7.5rem 0;
+}
+.earn-head {
+  width: 100%;
+  position: relative;
+  background-image: url("../../assets/img/earn-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.earn-head img {
+  width: 15rem;
+  object-fit: contain;
+  margin: 0 5rem 0 0;
+}
+.earn-head h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+.earn-head p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  opacity: 0.65;
+}
+.your-deposits-section {
+  width: 100%;
+}
+.yds-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.yds-head-right {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.yds-head-right > * {
+  margin: 0 0 0 3.5rem;
+}
+.yds-info-box {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  padding: 1.15rem;
+  background-color: var(--main-bg-4);
+}
+.yds-info-box p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-color-1);
+  opacity: 0.65;
+}
+.yds-info-box span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: var(--main-bg-6);
+  padding: 0.65rem 1.25rem;
+  font-weight: 500;
+  border-radius: 0.85rem;
+  color: var(--text-color-2);
+  margin: 0 0 0 1.5rem;
+}
+.yds-head h2 {
+  font-size: 3.5rem;
+  color: var(--text-color-1);
+  font-weight: 700;
+}
+.your-deposits-grid {
+  width: 100%;
+  margin: 5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}
+.deposits-card {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--border-color-3);
+  box-shadow: var(--box-shadow-1);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  overflow: hidden;
+}
+.deposits-card-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.deposits-card-content > img {
+  width: 15rem;
+  object-fit: contain;
+  border-radius: 1.5rem;
+}
+.deposits-card-content h5 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+  font-weight: 600;
+  margin: 2.5rem 0 0.15rem 0;
+}
+.deposits-card-content h6 {
+  font-size: 1.75rem;
+  color: var(--text-color-1);
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.65;
+}
+.dc-btn-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  margin: 2.5rem 0 0 0;
+}
+.dc-btn-grid > button,
+.dc-btn-grid .outline-grd-btn div {
+  width: 100%;
+}
+.dc-text-box {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dc-text-box p {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  margin: 0;
+}
+.dc-text-box span {
+  font-size: 1.5rem;
+  opacity: 0.65;
+  color: var(--text-color-1);
+}
+.dc-text-box p {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  margin: 0;
+}
+.dc-btn-grid .fill-grd-btn,
+.dc-btn-grid .outline-grd-btn div {
+  padding: 1.5rem 0;
+}
+.dark-theme .deposits-card-bg {
+  background: linear-gradient(
+    135deg,
+    #00ffaa 0%,
+    #4579f5 51.65%,
+    #9c42f5 99.83%
+  );
+}
+.light-theme .deposits-card-bg {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 170, 0.16) 0%,
+    rgba(69, 121, 245, 0.16) 51.65%,
+    rgba(156, 66, 245, 0.16) 99.83%
+  );
+}
+.deposits-card-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  opacity: 0;
+  /* transition: opacity 0.35s; */
+}
+.deposits-card:hover .deposits-card-bg {
+  opacity: 1;
+}
+.dc-btn-grid .fill-grd-btn i {
+  font-style: normal;
+}
+.dc-btn-grid .fill-grd-btn .grd-text {
+  display: none;
+}
+.dark-theme .deposits-card:hover .dc-btn-grid .fill-grd-btn .grd-text {
+  display: block;
+}
+.dark-theme .deposits-card:hover .dc-btn-grid .fill-grd-btn i {
+  display: none;
+}
+.dark-theme .deposits-card:hover .dc-btn-grid .fill-grd-btn {
+  background: #fff;
+}
+.dark-theme .deposits-card:hover .outline-grd-btn::before {
+  display: none;
+}
+.dark-theme .deposits-card:hover .outline-grd-btn div {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.dark-theme .deposits-card:hover .outline-grd-btn .grd-text {
+  color: #fff;
+  background: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  font-weight: 500;
+}
+.liquidity-tools-section {
+  width: 100%;
+  margin: 7.5rem 0;
+}
+.plp-btn {
+  width: 100%;
+  padding: 3.5rem 0 2.5rem 0;
+}
+.plp-btn div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plp-btn .outline-grd-btn div {
+  padding: 1.5rem 5rem;
+}
+.plp-btn .outline-grd-btn div .grd-text {
+  font-size: 1.75rem;
+}
+.liquidity-tools-section .box > h2 {
+  font-size: 3.5rem;
+  color: var(--text-color-1);
+  font-weight: 700;
+  margin: 0 0 2.5rem 0;
+}
+.prog-box {
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+  padding: 2.5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.prog-step {
+  width: max-content;
+  opacity: 0.65;
+  display: flex;
+  align-items: center;
+  margin: 0 5rem 0 0;
+}
+.prog-step > svg {
+  display: none;
+}
+.prog-step p {
+  font-size: 1.75rem;
+  color: #fff;
+  opacity: 1;
+}
+.prog-step svg {
+  font-size: 3rem;
+  margin: 0 1.5rem 0 0;
+  color: #fff;
+}
+.prog-step.prog-step-active > svg {
+  display: block;
+}
+.prog-step.prog-step-active {
+  opacity: 1;
+}
+.earn-head > div {
+  width: 100%;
+  position: relative;
+}
+.prog-line {
+  width: 100%;
+  height: 0.85rem;
+  background-color: var(--main-bg-6);
+  position: absolute;
+  bottom: -2.5rem;
+  right: 0;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+.prog-thumb {
+  width: 15%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #00ffaa 0%,
+    #4579f5 51.65%,
+    #9c42f5 99.83%
+  );
+  border-radius: 0 1000px 1000px 0;
+}
+.recenttrades-section.newdeposit-section {
+  padding: 0 0 5rem 0;
+}

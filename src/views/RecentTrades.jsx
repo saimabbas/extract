@@ -26,8 +26,21 @@ import HomeBlob1 from "../assets/img/home-blob-1.png";
 import TradeBlob1 from "../assets/img/trade-blob-1.png";
 import Footer from "../components/Footer";
 import { ThemeContext } from "../ThemeContext";
+import { gsap } from "gsap";
 
 const RecentTrades = () => {
+  gsap.fromTo(
+    ".home-blob-1",
+    {
+      opacity: 1,
+    },
+    {
+      opacity: 0.75,
+      duration: 1,
+      repeat: -1,
+      yoyo: true,
+    }
+  );
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   return (
     <div className="extract-app">

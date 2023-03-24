@@ -13,6 +13,7 @@
 }
 .home-blob-1 {
   height: 150rem;
+  max-height: 90%;
   width: max-content;
   position: absolute;
   top: 10vh;
@@ -306,6 +307,10 @@
   background: var(--grd-bg);
   transition: color 0, background-color 0, border-color 0 !important;
 }
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--text-color-1);
+}
 .collections-content {
   width: 100%;
   display: flex;
@@ -408,11 +413,7 @@
 }
 .activity-table {
   width: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(245, 247, 250, 0.06) 0%,
-    rgba(245, 247, 250, 0.0001) 100%
-  );
+  background: var(--main-bg-8);
   border: 1px solid var(--border-color-2);
   box-shadow: var(--box-shadow-1);
   backdrop-filter: blur(54.3656px);
@@ -420,6 +421,27 @@
   overflow: hidden;
   height: 100%;
 }
+.activity-table tbody tr:nth-child(even) {
+  background: var(--main-bg-10);
+}
+.activity-table tbody {
+  padding: 1.5rem;
+}
+
+.activity-table tbody tr {
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.activity-table tbody tr:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 170, 0.16) 0%,
+    rgba(69, 121, 245, 0.16) 51.65%,
+    rgba(156, 66, 245, 0.16) 99.83%
+  ) !important;
+}
+
 .activity .activity-table {
   margin: 5rem 0 0 0;
 }
@@ -438,12 +460,6 @@
   padding: 1rem 3.5rem;
   font-size: 1.5rem;
   color: var(--text-color-1);
-}
-.activity-table table tbody tr:first-child td {
-  padding: 3.5rem 3.5rem 1rem 3.5rem;
-}
-.activity-table table tbody tr:last-child td {
-  padding: 1rem 3.5rem 3.5rem 3.5rem;
 }
 .activity-table table thead {
   background: var(--main-bg-7);

@@ -46,7 +46,7 @@ const Header = (props) => {
               <BsSearch />
               <input type="text" placeholder="Search" />
             </div>
-            <a href="#">Collections</a>
+            <Link to="/collections">Collections</Link>
             <a target={"_blank"} href="https://tcclabs.github.io/extract/">
               Documents
             </a>
@@ -120,11 +120,13 @@ const Header = (props) => {
               <img src={ConnectWalletImg} alt="ConnectWalletImg" />
               <span className="grd-text">Connect</span>
             </a>
-            <button className="outline-grd-btn">
-              <div>
-                <span className="grd-text">Earn</span>
-              </div>
-            </button>
+            <Link to="/earn">
+              <button className="outline-grd-btn">
+                <div>
+                  <span className="grd-text">Earn</span>
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

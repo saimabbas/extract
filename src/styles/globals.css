@@ -33,6 +33,7 @@ html,
 body {
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 section,
 section .box {
@@ -97,6 +98,7 @@ section .box {
   transition: 0.35s;
   position: relative;
   overflow: hidden;
+  background-color: transparent;
 }
 .outline-grd-btn::before {
   content: "";
@@ -123,8 +125,8 @@ section .box {
   position: relative;
 }
 .outline-grd-btn div span {
-  font-size: 1.65rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .grd-text {
   background: var(--grd-text);

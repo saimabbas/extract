@@ -12,6 +12,9 @@ import LinksPage from "./views/Links";
 import Home from "./views/Home";
 import Favourites from "./views/Favourites";
 import RecentTrades from "./views/RecentTrades";
+import Collections from "./views/Collections";
+import Earn from "./views/Earn";
+import NewDeposit from "./views/NewDeposit";
 import { ThemeContext } from "./ThemeContext";
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/favourites" element={<Favourites />} />
           <Route exact path="/recenttrades" element={<RecentTrades />} />
+          <Route exact path="/collections" element={<Collections />} />
+          <Route exact path="/earn" element={<Earn />} />
+          <Route exact path="/newdeposit" element={<NewDeposit />} />
         </Routes>
       </Switch>
     </div>
