@@ -53,6 +53,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import DepositsCard from "../components/DepositsCard";
+import { Link } from "react-router-dom";
 
 const Collections = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
@@ -88,9 +89,11 @@ const Collections = () => {
                   <p>Deposits: </p> <span>19.40 ₳</span>
                 </div>
                 <div className="yds-info-box">
-                  <p>19.40 ₳</p> <span>0 ₳</span>
+                  <p>Pending fees:</p> <span>0 ₳</span>
                 </div>
-                <button className="fill-grd-btn">Provide liquidity</button>
+                <Link to="/setdeposittype">
+                  <button className="fill-grd-btn">Provide liquidity</button>
+                </Link>
               </div>
             </div>
             <div className="your-deposits-grid">

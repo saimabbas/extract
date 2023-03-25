@@ -57,7 +57,7 @@ import {
 } from "react-icons/bs";
 import DepositsCard from "../components/DepositsCard";
 
-const Collections = () => {
+const NewDeposit = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   return (
     <div className="extract-app">
@@ -103,7 +103,12 @@ const Collections = () => {
                   </div>
                 </div>
                 <div className="prog-line">
-                  <div className="prog-thumb"></div>
+                  <div
+                    style={{
+                      width: "15%",
+                    }}
+                    className="prog-thumb"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -512,4 +517,4 @@ const Collections = () => {
   );
 };
 
-export default Collections;
+export default NewDeposit;

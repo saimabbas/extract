@@ -64,7 +64,7 @@ const Collections = () => {
         <Header />
         <section className="recenttrades-section">
           <div className="box">
-            <div className="collections-head">
+            <div className="collections-top">
               <h1>Collections</h1>
               <div className="search-input-box">
                 <BsSearch />

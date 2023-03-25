@@ -72,7 +72,7 @@
   font-size: 1.5rem;
   background-color: var(--main-bg-6);
   padding: 0.65rem 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 0.85rem;
   color: var(--text-color-2);
   margin: 0 0 0 1.5rem;
@@ -311,4 +311,337 @@
 }
 .recenttrades-section.newdeposit-section {
   padding: 0 0 5rem 0;
+}
+.setdeposittype-section {
+  width: 100%;
+  margin: 0 0 7.5rem 0;
+}
+.setdeposittype > a {
+  font-size: 1.65rem;
+}
+.setdeposittype > a svg {
+  font-size: 1.5rem;
+  color: #00ffaa;
+  margin: 0 0.5rem 0 0;
+}
+.setdeposittype h2 {
+  font-size: 3.5rem;
+  margin: 3.5rem 0;
+  color: var(--text-color-1);
+  font-weight: 700;
+}
+.setdeposittype.selectnfts h2 {
+  font-size: 3.5rem;
+  margin: 3.5rem 0 1rem 0;
+  color: var(--text-color-1);
+  font-weight: 700;
+}
+.sdt-box {
+  width: max-content;
+  max-width: 60rem;
+  position: relative;
+  border: 1px solid var(--border-color-3);
+  box-shadow: var(--box-shadow-1);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 2.5rem;
+  padding: 2.5rem 5rem 2.5rem 2.5rem;
+  overflow: hidden;
+  background-color: var(--main-bg-2);
+}
+.sdt-box img {
+  width: 10rem;
+  object-fit: contain;
+}
+.sdt-box h4 {
+  font-size: 3rem;
+  color: var(--text-color-1);
+  font-weight: 600;
+  margin: 2.5rem 0 1rem 0;
+}
+.sdt-box p,
+.setdeposittype > p {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  margin: 0;
+  opacity: 0.65;
+}
+.sdt-box button {
+  margin: 3.5rem 0;
+  min-width: 17.5rem;
+  font-size: 1.75rem;
+  box-shadow: 0px 0px 1px rgba(69, 121, 245, 0.24),
+    0px 2px 4px -1px rgba(27, 10, 82, 0.12),
+    0px 16px 24px rgba(69, 121, 245, 0.24),
+    0px 8px 8px -4px rgba(69, 121, 245, 0.12);
+}
+.selectnfts-grid {
+  width: 100%;
+  margin: 3.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 50rem;
+  grid-template-rows: auto;
+  grid-gap: 3.5rem;
+}
+.selectnfts-grid-card-1 {
+  width: 100%;
+}
+.nftslist-box {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.06) 0%,
+    rgba(245, 247, 250, 0.0001) 100%
+  );
+  width: 100%;
+  border: 1px solid var(--border-color-2);
+  box-shadow: var(--box-shadow-1);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  max-height: 40rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.nftslist-box::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 1000px;
+}
+.nftslist-box::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg-3);
+  border-radius: 1000px;
+}
+.nftslist-box::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 1000px;
+}
+.nft-box {
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+.nft-box > input {
+  display: none;
+}
+.nft-box label {
+  width: 100%;
+}
+.nft-box-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nbc-left {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nbc-left img {
+  width: 4rem;
+  object-fit: contain;
+}
+.nbc-left h6 {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--text-color-1);
+  margin: 0 1.5rem;
+}
+.epic {
+  font-size: 1.35rem;
+  color: #fff;
+  background-color: #ff4e27;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.rare {
+  font-size: 1.35rem;
+  color: #fff;
+  background-color: #9a3fe0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.uncommon {
+  font-size: 1.35rem;
+  color: #fff;
+  background-color: #119ae3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.common {
+  font-size: 1.35rem;
+  color: #fff;
+  background-color: #2fde8a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.nbc-right {
+  width: max-content;
+}
+.nft-check {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border-color-4);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nft-check svg {
+  font-size: 1.65rem;
+  color: #fff;
+  display: none;
+}
+.nft-box > input:checked + label .nft-check {
+  background: linear-gradient(
+    135deg,
+    #00ffaa 0%,
+    #4579f5 51.65%,
+    #9c42f5 99.83%
+  );
+}
+.nft-box > input:checked + label .nft-check svg {
+  display: block;
+}
+.confirm-deposit {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.06) 0%,
+    rgba(245, 247, 250, 0.0001) 100%
+  );
+  width: 100%;
+  border: 1px solid var(--border-color-2);
+  box-shadow: var(--box-shadow-1);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+}
+.confirm-deposit h5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color-1);
+  margin: 0 0 2.5rem 0;
+}
+.cd-text-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
+}
+.cd-text-box h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color-1);
+  opacity: 0.65;
+  margin: 0;
+}
+.cd-text-box p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color-1);
+  margin: 0;
+}
+.cd-text-box span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: var(--main-bg-6);
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  border-radius: 0.85rem;
+  color: var(--text-color-2);
+}
+.cd-line {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--border-color-4);
+  margin: 2rem 0;
+}
+.confirm-deposit button {
+  margin: 2.5rem 0 0 0;
+}
+.pair-ada {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.06) 0%,
+    rgba(245, 247, 250, 0.0001) 100%
+  );
+  width: 100%;
+  border: 1px solid var(--border-color-2);
+  box-shadow: var(--box-shadow-1);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+}
+.pair-ada .input-box label {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  margin: 0 0 0.75rem 0;
+}
+.pair-ada .input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pair-ada .input-box:not(:last-of-type) {
+  margin: 0 0 2.5rem 0;
+}
+.pair-ada .input-box input {
+  width: 100%;
+  padding: 1.15rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  background-color: var(--border-color-2);
+  border-radius: 12px;
+  outline: 0;
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+}
+.pair-ada .input-box input::placeholder {
+  color: var(--text-color-1);
+}
+.horizontal-slider {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #00ffaa 0%,
+    #4579f5 51.65%,
+    #9c42f5 99.83%
+  );
+  height: 0.5rem;
+  border-radius: 1000px;
+  margin: 2.5rem 0 0 0;
+}
+.example-thumb {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #00ffaa 0%,
+    #4579f5 51.65%,
+    #9c42f5 99.83%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  outline: 0;
+  font-weight: 500;
+}
+.example-thumb span {
+  position: absolute;
+  top: -150%;
+  font-size: 1.25rem;
+  color: var(--text-color-1);
 }

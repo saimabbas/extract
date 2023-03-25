@@ -20,6 +20,7 @@
   --border-color-1: #eeeeee;
   --border-color-2: rgba(47, 49, 50, 0.05);
   --border-color-3: #eeeeee;
+  --border-color-4: rgba(33, 36, 41, 0.2);
   --box-shadow-1: unset;
 }
 .dark-theme {
@@ -48,6 +49,7 @@
   --border-color-1: #323539;
   --border-color-2: transparent;
   --border-color-3: rgba(255, 255, 255, 0.06);
+  --border-color-4: rgba(255, 255, 255, 0.2);
   --box-shadow-1: 0px 1px 2px rgb(9 13 20 / 24%),
     -2px -2px 4px rgb(224 224 255 / 2%), 0px 4px 4px rgb(9 13 20 / 12%);
 }

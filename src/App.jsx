@@ -15,6 +15,9 @@ import RecentTrades from "./views/RecentTrades";
 import Collections from "./views/Collections";
 import Earn from "./views/Earn";
 import NewDeposit from "./views/NewDeposit";
+import SetDepositType from "./views/SetDepositType";
+import SelectNFTs from "./views/SelectNFTs";
+import Inventory from "./views/Inventory";
 import { ThemeContext } from "./ThemeContext";
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
           <Route exact path="/collections" element={<Collections />} />
           <Route exact path="/earn" element={<Earn />} />
           <Route exact path="/newdeposit" element={<NewDeposit />} />
+          <Route exact path="/selectnfts" element={<SelectNFTs />} />
+          <Route exact path="/setdeposittype" element={<SetDepositType />} />
+          <Route exact path="/inventory" element={<Inventory />} />
         </Routes>
       </Switch>
     </div>

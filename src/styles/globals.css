@@ -33,8 +33,17 @@ html,
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  background-color: var(--main-bg);
+  /* overflow-x: hidden; */
 }
+
+/* body::-webkit-scrollbar {
+  background-color: var(--main-bg);
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--grd-text);
+} */
 section,
 section .box {
   position: relative;
@@ -90,10 +99,10 @@ section .box {
 .outline-grd-btn {
   width: max-content;
   height: max-content;
-  border-radius: 1.2rem;
+  border-radius: 1.35rem;
   outline: 0;
   border: 0;
-  padding: 1px;
+  padding: 1.5px;
   cursor: pointer;
   transition: 0.35s;
   position: relative;
@@ -154,4 +163,121 @@ section .box {
   border: 0;
   background: var(--grd-bg);
   color: var(--white);
+}
+.modal-backdrop.show {
+  backdrop-filter: blur(7.5px) !important;
+  background: rgba(33, 36, 41, 0.5) !important;
+  opacity: 1 !important;
+}
+.modal-content {
+  background-color: var(--main-bg) !important;
+  border-radius: 3.5rem !important;
+  width: max-content !important;
+}
+.modal-body {
+  background-color: var(--main-bg) !important;
+  padding: 4rem !important;
+  border-radius: 3.5rem !important;
+  width: max-content !important;
+}
+.modal-dialog {
+  width: max-content;
+}
+.sale-nft-modal {
+  min-width: 350px;
+}
+.modal-head {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.modal-head svg {
+  font-size: 3.5rem;
+  color: var(--text-color-1);
+  cursor: pointer;
+}
+.modal-head h2 {
+  font-size: 4rem;
+  color: var(--text-color-1);
+  font-weight: 700;
+  margin: 0;
+}
+.sale-nft-profile {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2.5rem 0;
+}
+.sale-nft-profile img {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  margin: 0 2.5rem 0 0;
+}
+.sale-nft-profile div h3 {
+  font-size: 2.25rem;
+  color: var(--text-color-1);
+  font-weight: 600;
+}
+.sale-nft-profile div p {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  margin: 0;
+  opacity: 0.65;
+}
+.swap-nft-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3rem 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4rem;
+  margin: 3.5rem 0;
+  padding: 0 0 3.5rem 0;
+  border-bottom: 1px solid var(--border-color-4);
+}
+.swap-nft-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.swap-nft-card img {
+  width: 8.5rem;
+  height: 8.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.swap-nft-card h5 {
+  font-size: 1.75rem;
+  color: var(--text-color-1);
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.swap-nft-card span {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  opacity: 0.65;
+}
+.swap-img img {
+  width: 3rem;
+}
+.swap-nft-grid div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extract-fee {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  margin: 3.5rem 0;
+}
+.extract-fee span {
+  opacity: 0.65;
+  font-size: 1.35rem;
+  margin: 0 0.5rem 0 0;
 }

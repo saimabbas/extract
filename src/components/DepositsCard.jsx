@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 
 import "../styles/views/earn.css";
 import DepositsCardImg from "../assets/img/deposits-card-img.png";
+import { Link } from "react-router-dom";
 
 const DepositsCard = () => {
   return (
@@ -24,9 +25,11 @@ const DepositsCard = () => {
             <i>Withdraw</i> <span className="grd-text">Withdraw</span>
           </button>
           <button className="outline-grd-btn">
-            <div>
-              <span className="grd-text">New Deposit</span>
-            </div>
+            <Link to="/setdeposittype">
+              <div>
+                <span className="grd-text">New Deposit</span>
+              </div>
+            </Link>
           </button>
         </div>
       </div>
