@@ -11,7 +11,7 @@ const DepositsCard = () => {
       <div className="deposits-card-content">
         <img src={DepositsCardImg} alt="DepositsCardImg" />
         <h5>Critters Cult</h5>
-        <h6>CRITCULT-SOL</h6>
+        {/* <h6>CRITCULT-SOL</h6> */}
         <div className="dc-text-box">
           <p>Deposited</p>
           <span>24.40 ₳</span>

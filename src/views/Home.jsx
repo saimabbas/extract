@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 // Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -76,6 +76,8 @@ import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 
 const Home = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  const [isExtraCollectionShowing, setIsExtraCollectionShowing] =
+    useState(false);
   gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, CSSRulePlugin);
 
   const goToFAQs = () => {
@@ -407,63 +409,77 @@ const Home = () => {
                     </Nav.Item>
                   </Nav>
                 </div>
-                <div className="collections-container">
-                  <Tab.Content>
-                    <Tab.Pane eventKey="new">
-                      <div className="collections-grid">
-                        <CollectionsCard img={CollectionImg1} />
-                        <CollectionsCard img={CollectionImg2} />
-                        <CollectionsCard img={CollectionImg3} />
-                        <CollectionsCard img={CollectionImg4} />
-                        <CollectionsCard img={CollectionImg5} />
-                        <CollectionsCard img={CollectionImg6} />
-                        <CollectionsCard img={CollectionImg7} />
-                        <CollectionsCard img={CollectionImg8} />
-                        <CollectionsCard img={CollectionImg9} />
-                        <CollectionsCard img={CollectionImg10} />
-                        <CollectionsCard img={CollectionImg1} />
-                        <CollectionsCard img={CollectionImg2} />
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="trending">
-                      <div className="collections-grid">
-                        <CollectionsCard img={CollectionImg1} />
-                        <CollectionsCard img={CollectionImg2} />
-                        <CollectionsCard img={CollectionImg3} />
-                        <CollectionsCard img={CollectionImg4} />
-                        <CollectionsCard img={CollectionImg5} />
-                        <CollectionsCard img={CollectionImg6} />
-                        <CollectionsCard img={CollectionImg7} />
-                        <CollectionsCard img={CollectionImg8} />
-                        <CollectionsCard img={CollectionImg9} />
-                        <CollectionsCard img={CollectionImg10} />
-                        <CollectionsCard img={CollectionImg1} />
-                        <CollectionsCard img={CollectionImg2} />
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="best-deals">
-                      <div className="collections-grid">
-                        <CollectionsCard img={CollectionImg1} />
-                        <CollectionsCard img={CollectionImg2} />
-                        <CollectionsCard img={CollectionImg3} />
-                        <CollectionsCard img={CollectionImg4} />
-                        <CollectionsCard img={CollectionImg5} />
-                        <CollectionsCard img={CollectionImg6} />
-                        <CollectionsCard img={CollectionImg7} />
-                        <CollectionsCard img={CollectionImg8} />
-                        <CollectionsCard img={CollectionImg9} />
-                        <CollectionsCard img={CollectionImg10} />
-                        <CollectionsCard img={CollectionImg1} />
-                        <CollectionsCard img={CollectionImg2} />
-                      </div>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </div>
-                <button className="outline-grd-btn">
-                  <div>
-                    <span className="grd-text">Show more</span>
+                {isExtraCollectionShowing ? (
+                  <div className="collections-container">
+                    <Tab.Content>
+                      <Tab.Pane eventKey="new">
+                        <div className="collections-grid">
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                          <CollectionsCard img={CollectionImg7} />
+                          <CollectionsCard img={CollectionImg8} />
+                          <CollectionsCard img={CollectionImg9} />
+                          <CollectionsCard img={CollectionImg10} />
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                        </div>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="trending"></Tab.Pane>
+                      <Tab.Pane eventKey="best-deals"></Tab.Pane>
+                    </Tab.Content>
                   </div>
-                </button>
+                ) : (
+                  <div className="collections-container">
+                    <Tab.Content>
+                      <Tab.Pane eventKey="new">
+                        <div className="collections-grid">
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                          <CollectionsCard img={CollectionImg7} />
+                          <CollectionsCard img={CollectionImg8} />
+                        </div>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="trending"></Tab.Pane>
+                      <Tab.Pane eventKey="best-deals"></Tab.Pane>
+                    </Tab.Content>
+                  </div>
+                )}
+
+                {isExtraCollectionShowing ? (
+                  <button
+                    className="outline-grd-btn"
+                    onClick={() => {
+                      setIsExtraCollectionShowing(false);
+                    }}
+                  >
+                    <div>
+                      <span className="grd-text">Show less</span>
+                    </div>
+                  </button>
+                ) : (
+                  <button
+                    className="outline-grd-btn"
+                    onClick={() => {
+                      setIsExtraCollectionShowing(true);
+                    }}
+                  >
+                    <div>
+                      <span className="grd-text">Show more</span>
+                    </div>
+                  </button>
+                )}
               </Tab.Container>
             </div>
           </div>

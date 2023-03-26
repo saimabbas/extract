@@ -149,13 +149,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -181,13 +185,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -213,13 +221,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -245,13 +257,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -277,13 +293,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -309,13 +329,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -341,13 +365,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -373,13 +401,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -405,13 +437,17 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
-                    </tr>{" "}
+                    </tr>
                     <tr>
                       <td>
                         <div className="activity-index">
@@ -437,11 +473,15 @@ const Collections = () => {
                         </div>
                       </td>
                       <td>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Provide Liquidity</span>
-                          </div>
-                        </button>
+                        <Link to="/setdeposittype">
+                          <button className="outline-grd-btn">
+                            <div>
+                              <span className="grd-text">
+                                Provide Liquidity
+                              </span>
+                            </div>
+                          </button>
+                        </Link>
                       </td>
                     </tr>
                     <div className="plp-btn">

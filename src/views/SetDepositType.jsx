@@ -101,7 +101,7 @@ const SetDepositType = () => {
                     <BsCheckCircle />
                     <div>
                       <p>03</p>
-                      <p>Set deposit type</p>
+                      <p>Select NFTs</p>
                     </div>
                   </div>
                 </div>
@@ -134,8 +134,9 @@ const SetDepositType = () => {
                   Behavioral targeting produces a marketing tool. The event
                   format saves system analysis
                 </p>
-
-                <button className="fill-grd-btn">Select</button>
+                <Link to="/selectnfts">
+                  <button className="fill-grd-btn">Select</button>
+                </Link>
               </div>
             </div>
           </div>

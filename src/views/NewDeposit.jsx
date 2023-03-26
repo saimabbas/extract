@@ -98,7 +98,7 @@ const NewDeposit = () => {
                     <BsCheckCircle />
                     <div>
                       <p>03</p>
-                      <p>Set deposit type</p>
+                      <p>Select NFTs</p>
                     </div>
                   </div>
                 </div>
