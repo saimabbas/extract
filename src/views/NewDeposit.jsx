@@ -116,7 +116,7 @@ const NewDeposit = () => {
         </section>
         <section className="recenttrades-section newdeposit-section">
           <div className="box">
-            <div className="collections-head">
+            <div className="collections-top">
               <h1>Collections</h1>
               <div className="search-input-box">
                 <BsSearch />

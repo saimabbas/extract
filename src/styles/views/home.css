@@ -285,6 +285,7 @@
   font-size: 3.5rem;
   color: var(--text-color-1);
   font-weight: 700;
+  margin: 0;
 }
 .nav.nav-pills {
   background-color: var(--main-bg-9);
