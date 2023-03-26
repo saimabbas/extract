@@ -105,7 +105,10 @@ const Home = () => {
                 <h1>Welcome to Extract.</h1>
                 <div className="welcome-text-grid">
                   <p>An AMM powered marketplace for NFTs, built by TCC Labs.</p>
-                  <p>An AMM powered marketplace for NFTs, built by TCC Labs.</p>
+                  <p>
+                    Access instant liquidity and new trade types within our
+                    DApp.
+                  </p>
                   <p>
                     Providing TCC NFTs as liquidity will allow you to access
                     cheaper fees on Extract.
