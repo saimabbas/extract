@@ -301,7 +301,7 @@ const SetDepositType = () => {
                   <div className="pair-ada">
                     <div className="input-box">
                       <label>Pair ADA amount</label>
-                      <input type="text" placeholder="0 ₳" />
+                      <input disabled type="text" placeholder="0 ₳" />
                     </div>
                     <div className="input-box">
                       <label>Select NFTs</label>
@@ -309,7 +309,7 @@ const SetDepositType = () => {
                         className="horizontal-slider"
                         thumbClassName="example-thumb"
                         trackClassName="example-track"
-                        defaultValue={[0, 50]}
+                        defaultValue={[35]}
                         ariaLabel={["Lower thumb", "Upper thumb"]}
                         ariaValuetext={(state) =>
                           `Thumb value ${state.valueNow}`
