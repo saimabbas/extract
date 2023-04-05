@@ -91,3 +91,7 @@
   font-size: 1.75rem;
   margin: 0 1rem 0 0;
 }
+.activity-table.collections-table table tbody > a {
+  display: table-row;
+  width: 100%;
+}

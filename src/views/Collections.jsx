@@ -312,342 +312,502 @@ const Collections = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg1} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg1} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg2} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
                     </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
                     <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
                     </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
                     <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg3} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg2} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg4} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
                     </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
                     <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
                     </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
                     <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg5} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg3} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg6} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
                     </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
                     <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
                     </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
                     <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg7} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg4} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg8} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
                     </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
                     <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
                     </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
                     <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg9} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg5} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
                     </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
                     <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
                     </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
                     <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg10} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg6} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
                     </td>
                     <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
                     </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
                     <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
                     </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
                     <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg7} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg8} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg9} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="activity-index">
+                          <img src={ActivityImg10} alt="ActivityImg1" />
+                          <h6>Graphic</h6>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-tvl">
+                          <p>90.1886 ₳</p>
+                          <span>112 NFTs + 3.897 ₳</span>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">90.1886 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">87.1296 ₳</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-volume">
+                          <p>
+                            3.897 ₳ <span> / 7d</span>
+                          </p>
+                          <p>
+                            12.899 ₳ <span> / 24h</span>
+                          </p>
+                        </div>
+                      </Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">9,890</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">10% (989)</Link>
+                    </td>
+                    <td>
+                      <Link to="/individualcollection">
+                        <div className="collections-change">
+                          <BsArrowUpRight />
+                          63.55%
+                        </div>
+                      </Link>
                     </td>
                   </tr>
                 </tbody>
