@@ -129,7 +129,7 @@ section .box {
   height: max-content;
   background-color: var(--main-bg);
   border-radius: 1.2rem;
-  padding: 1.15rem 4.5rem;
+  padding: 1.5rem 4.5rem;
   z-index: 105;
   position: relative;
 }
@@ -181,7 +181,10 @@ section .box {
   width: max-content !important;
 }
 .modal-dialog {
-  width: max-content;
+  width: max-content !important;
+}
+.modal-dialog-centered {
+  justify-content: center;
 }
 .sale-nft-modal {
   min-width: 350px;
@@ -202,6 +205,17 @@ section .box {
   color: var(--text-color-1);
   font-weight: 700;
   margin: 0;
+  display: flex;
+  align-items: center;
+}
+.modal-head span {
+  background-color: var(--main-bg-6);
+  color: var(--text-color-2);
+  font-size: 1.35rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  margin: 0 0 0 1.5rem;
 }
 .sale-nft-profile {
   width: max-content;
@@ -280,4 +294,107 @@ section .box {
   opacity: 0.65;
   font-size: 1.35rem;
   margin: 0 0.5rem 0 0;
+}
+
+.cart-modal {
+  min-width: 55rem;
+  max-width: 55rem;
+}
+.cart-table {
+  width: 100%;
+  margin: 2.5rem 0;
+  border-bottom: 1px solid var(--border-color-1);
+  padding: 0 0 2.5rem 0;
+}
+.cart-table th {
+  font-size: 1.35rem;
+  color: var(--text-color-1);
+  font-weight: 400;
+  opacity: 0.65;
+  padding: 0 0 1.5rem 0;
+  border-bottom: 1px solid var(--border-color-1);
+  width: max-content;
+}
+.cart-table td {
+  font-size: 1.35rem;
+  color: var(--text-color-1);
+  padding: 0.75rem 0.75rem;
+  width: max-content;
+}
+.cart-table tr:first-child td {
+  padding: 2.5rem 0.75rem 0.75rem 0.75rem;
+}
+.cart-table table {
+  width: 100%;
+  max-height: 30rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.cart-table::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 1000px;
+}
+.cart-table::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg-3);
+  border-radius: 1000px;
+}
+.cart-table::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 1000px;
+}
+.cart-table .activity-index img {
+  width: 3.5rem;
+  object-fit: contain;
+}
+.cart-table .activity-index p {
+  font-size: 1.35rem;
+  color: var(--text-color-1);
+  margin: 0 0 0 1rem;
+}
+.cart-modal > p {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  display: flex;
+  align-items: center;
+}
+.cart-modal > p span {
+  font-size: 1.35rem;
+  opacity: 0.65;
+  margin: 0 1.5rem 0 0;
+}
+.cart-btn-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  margin: 2.5rem 0 0 0;
+}
+.cart-btn-grid button {
+  width: 100%;
+}
+.cart-btn-grid button div {
+  width: 100%;
+}
+.activities-modal {
+  width: 80vw;
+  max-width: 100rem;
+}
+.activity-modal-body .modal-body {
+  padding: 0 !important;
+}
+.activity-modal-body .activity-table table tr:first-child th {
+  padding: 3.5rem 0;
+  opacity: 1;
+}
+.activity-modal-body .activity {
+  padding: 0;
+}
+.activity-modal-body .activity .activity-table {
+  margin: 0;
+}
+.activity-modal-body .modal-head {
+  padding: 0 2.5rem;
+}
+.activity-modal-body .activity-table table tr:nth-child(2) th {
+  padding: 0 3.5rem 1.5rem 3.5rem;
 }

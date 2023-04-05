@@ -42,6 +42,7 @@ header {
   display: flex;
   align-items: center;
   margin: 0 2.5rem;
+  cursor: pointer;
 }
 .header-right .connect-wallet-link img {
   width: 1.9rem;
@@ -111,4 +112,137 @@ header {
 }
 .active-theme.theme-icon svg {
   color: #fff;
+}
+.cart-dropdown {
+  width: max-content;
+  margin: 0 3rem 0 0;
+}
+.cart-dropdown a {
+  margin: 0;
+}
+.cart-dropdown .btn-primary {
+  background-color: unset !important;
+  padding: 0 !important;
+  outline: 0 !important;
+  border: 0 !important;
+  box-shadow: unset !important;
+}
+.cart-dropdown .btn-primary::after {
+  display: none;
+}
+.cart-dropdown .dropdown-menu {
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: unset !important;
+  border: 0 !important;
+  position: absolute !important;
+  top: unset !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  right: unset !important;
+  transform: translate(-50%, 105%) !important;
+}
+.cart-content {
+  min-width: 32.5rem;
+  width: 100%;
+  padding: 2.5rem;
+  background-color: var(--main-bg-2);
+  border: 1px solid var(--border-color-1);
+  box-shadow: var(--box-shadow-1);
+  backdrop-filter: blur(54.3656px);
+  border-radius: 2.5rem;
+}
+.cc-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0 0 0;
+}
+.cc-item-left {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.cc-item-left img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+.cc-item-left h6 {
+  font-size: 1.75rem;
+  color: var(--text-color-1);
+  margin: 0 0 0 1.5rem;
+}
+.cc-item-right {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.cc-item-right p {
+  font-size: 1.65rem;
+  color: var(--text-color-1);
+  margin: 0 1.5rem 0 0;
+}
+.cc-item-right div {
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--grd-text);
+  border-radius: 1000px;
+}
+.cart-content button {
+  width: 100%;
+}
+.cart-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color-1);
+  margin: 2rem 0;
+}
+.cc-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0.5rem 0;
+}
+.cc-top h5 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--text-color-1);
+}
+.cc-top span {
+  background-color: var(--main-bg-6);
+  color: var(--text-color-2);
+  font-size: 1.35rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+}
+.cw-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.connectwallet-modal {
+  max-width: 300px;
+}
+.cw-content img {
+  width: 6.5rem;
+}
+.cw-content h4 {
+  font-size: 2rem;
+  margin: 3.5rem 0;
+  color: var(--text-color-1);
+  text-align: center;
+}
+.cw-content button,
+.cw-content button div {
+  width: 100%;
+}
+.cw-content button .grd-text {
+  font-size: 1.65rem;
 }

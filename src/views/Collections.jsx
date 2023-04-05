@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 // Styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/views/home.css";
 import "../styles/views/recenttrades.css";
 import "../styles/views/collections.css";
+import "../styles/views/individualcollection.css";
 
 // Components
 import Header from "../components/Header";
@@ -41,6 +42,8 @@ import {
   BsCartCheck,
   BsCartFill,
   BsCartXFill,
+  BsCheck,
+  BsChevronDown,
   BsDiscord,
   BsHeart,
   BsHeartFill,
@@ -48,10 +51,13 @@ import {
   BsSearch,
   BsSun,
   BsTwitter,
+  BsX,
 } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Collections = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   return (
     <div className="extract-app">
       <div className="home-page">
@@ -69,12 +75,202 @@ const Collections = () => {
               <div className="search-input-box">
                 <BsSearch />
                 <input type="text" placeholder="Search" />
-
-                {isDarkTheme ? (
-                  <img src={SettingsIcon} alt="SettingsIcon" />
+                {isSettingsOpen ? (
+                  <div
+                    className="sib-cross"
+                    onClick={() => {
+                      setIsSettingsOpen(false);
+                    }}
+                  >
+                    <BsX />
+                  </div>
                 ) : (
-                  <img src={SettingsIconLight} alt="SettingsIcon" />
+                  <>
+                    {isDarkTheme ? (
+                      <img
+                        onClick={() => {
+                          setIsSettingsOpen(true);
+                        }}
+                        src={SettingsIcon}
+                        alt="SettingsIcon"
+                      />
+                    ) : (
+                      <img
+                        onClick={() => {
+                          setIsSettingsOpen(true);
+                        }}
+                        src={SettingsIconLight}
+                        alt="SettingsIcon"
+                      />
+                    )}
+                  </>
                 )}
+                {isSettingsOpen ? (
+                  <div className="sib-settings">
+                    <div className="ic-acc">
+                      <Accordion>
+                        <Accordion.Item eventKey="0">
+                          <Accordion.Header>
+                            <div className="ic-cc-head">
+                              Volume
+                              <BsChevronDown />
+                            </div>
+                          </Accordion.Header>
+                          <Accordion.Body>
+                            <div className="ic-acc-body">
+                              <div className="ic-check-select-box">
+                                <p>From low to high</p>
+                                <div className="ic-checkbox">
+                                  <input type="radio" name="Volume" id="v1" />
+                                  <label htmlFor="v1">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div className="ic-check-select-box">
+                                <p>From high to low</p>
+                                <div className="ic-checkbox">
+                                  <input type="radio" name="Volume" id="v2" />
+                                  <label htmlFor="v2">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      </Accordion>
+                    </div>
+                    <div className="ic-acc">
+                      <Accordion>
+                        <Accordion.Item eventKey="0">
+                          <Accordion.Header>
+                            <div className="ic-cc-head">
+                              TVL
+                              <BsChevronDown />
+                            </div>
+                          </Accordion.Header>
+                          <Accordion.Body>
+                            <div className="ic-acc-body">
+                              <div className="ic-check-select-box">
+                                <p>From low to high</p>
+                                <div className="ic-checkbox">
+                                  <input type="radio" name="TVL" id="tvl1" />
+                                  <label htmlFor="tvl1">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div className="ic-check-select-box">
+                                <p>From high to low</p>
+                                <div className="ic-checkbox">
+                                  <input type="radio" name="TVL" id="tvl2" />
+                                  <label htmlFor="tvl2">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      </Accordion>
+                    </div>
+                    <div className="ic-acc">
+                      <Accordion>
+                        <Accordion.Item eventKey="0">
+                          <Accordion.Header>
+                            <div className="ic-cc-head">
+                              Price
+                              <BsChevronDown />
+                            </div>
+                          </Accordion.Header>
+                          <Accordion.Body>
+                            <div className="ic-acc-body">
+                              <div className="ic-check-select-box">
+                                <p>From low to high</p>
+                                <div className="ic-checkbox">
+                                  <input type="radio" name="Price" id="p1" />
+                                  <label htmlFor="p1">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div className="ic-check-select-box">
+                                <p>From high to low</p>
+                                <div className="ic-checkbox">
+                                  <input type="radio" name="Price" id="p2" />
+                                  <label htmlFor="p2">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      </Accordion>
+                    </div>
+                    <div className="ic-acc">
+                      <Accordion>
+                        <Accordion.Item eventKey="0">
+                          <Accordion.Header>
+                            <div className="ic-cc-head">
+                              Collection size
+                              <BsChevronDown />
+                            </div>
+                          </Accordion.Header>
+                          <Accordion.Body>
+                            <div className="ic-acc-body">
+                              <div className="ic-check-select-box">
+                                <p>From low to high</p>
+                                <div className="ic-checkbox">
+                                  <input
+                                    type="radio"
+                                    name="Collection size"
+                                    id="cs1"
+                                  />
+                                  <label htmlFor="cs1">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div className="ic-check-select-box">
+                                <p>From high to low</p>
+                                <div className="ic-checkbox">
+                                  <input
+                                    type="radio"
+                                    name="Collection size"
+                                    id="cs2"
+                                  />
+                                  <label htmlFor="cs2">
+                                    <div className="icc-check">
+                                      <BsCheck />
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      </Accordion>
+                    </div>
+                    <button className="fill-grd-btn">Confirm</button>
+                    <div className="grd-text">Clear all</div>
+                  </div>
+                ) : null}
               </div>
               <Tab.Container defaultActiveKey="1h" transition={false}>
                 <Nav variant="pills">

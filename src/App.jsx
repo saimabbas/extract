@@ -18,6 +18,8 @@ import NewDeposit from "./views/NewDeposit";
 import SetDepositType from "./views/SetDepositType";
 import SelectNFTs from "./views/SelectNFTs";
 import Inventory from "./views/Inventory";
+import IndividualCollection from "./views/IndividualCollection";
+import Withdraw from "./views/Withdraw";
 import { ThemeContext } from "./ThemeContext";
 
 function App() {
@@ -36,6 +38,12 @@ function App() {
           <Route exact path="/selectnfts" element={<SelectNFTs />} />
           <Route exact path="/setdeposittype" element={<SetDepositType />} />
           <Route exact path="/inventory" element={<Inventory />} />
+          <Route
+            exact
+            path="/individualcollection"
+            element={<IndividualCollection />}
+          />
+          <Route exact path="/withdraw" element={<Withdraw />} />
         </Routes>
       </Switch>
     </div>

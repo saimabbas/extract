@@ -491,7 +491,6 @@ const Home = () => {
           <div className="box">
             <div className="activity-content">
               <h3>Activity feed</h3>
-
               <div className="activity-table">
                 <table>
                   <thead>
