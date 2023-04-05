@@ -165,6 +165,9 @@
 .dc-btn-grid .outline-grd-btn div {
   padding: 1.5rem 0;
 }
+.dc-btn-grid .fill-grd-btn a {
+  color: var(--text-color-1);
+}
 .dark-theme .deposits-card-bg {
   background: linear-gradient(
     135deg,

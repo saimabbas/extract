@@ -22,7 +22,9 @@ const DepositsCard = () => {
         </div>
         <div className="dc-btn-grid">
           <button className="fill-grd-btn">
-            <i>Withdraw</i> <span className="grd-text">Withdraw</span>
+            <Link to="/withdraw">
+              <i>Withdraw</i> <span className="grd-text">Withdraw</span>
+            </Link>
           </button>
           <button className="outline-grd-btn">
             <Link to="/setdeposittype">

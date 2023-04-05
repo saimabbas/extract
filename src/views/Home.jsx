@@ -435,8 +435,46 @@ const Home = () => {
                           <CollectionsCard img={CollectionImg6} />
                         </div>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="trending"></Tab.Pane>
-                      <Tab.Pane eventKey="best-deals"></Tab.Pane>
+                      <Tab.Pane eventKey="trending">
+                        <div className="collections-grid">
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                          <CollectionsCard img={CollectionImg7} />
+                          <CollectionsCard img={CollectionImg8} />
+                          <CollectionsCard img={CollectionImg9} />
+                          <CollectionsCard img={CollectionImg10} />
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                        </div>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="best-deals">
+                        <div className="collections-grid">
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                          <CollectionsCard img={CollectionImg7} />
+                          <CollectionsCard img={CollectionImg8} />
+                          <CollectionsCard img={CollectionImg9} />
+                          <CollectionsCard img={CollectionImg10} />
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                        </div>
+                      </Tab.Pane>
                     </Tab.Content>
                   </div>
                 ) : (
@@ -454,8 +492,30 @@ const Home = () => {
                           <CollectionsCard img={CollectionImg8} />
                         </div>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="trending"></Tab.Pane>
-                      <Tab.Pane eventKey="best-deals"></Tab.Pane>
+                      <Tab.Pane eventKey="trending">
+                        <div className="collections-grid">
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                          <CollectionsCard img={CollectionImg7} />
+                          <CollectionsCard img={CollectionImg8} />
+                        </div>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="best-deals">
+                        <div className="collections-grid">
+                          <CollectionsCard img={CollectionImg1} />
+                          <CollectionsCard img={CollectionImg2} />
+                          <CollectionsCard img={CollectionImg3} />
+                          <CollectionsCard img={CollectionImg4} />
+                          <CollectionsCard img={CollectionImg5} />
+                          <CollectionsCard img={CollectionImg6} />
+                          <CollectionsCard img={CollectionImg7} />
+                          <CollectionsCard img={CollectionImg8} />
+                        </div>
+                      </Tab.Pane>
                     </Tab.Content>
                   </div>
                 )}

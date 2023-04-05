@@ -91,6 +91,8 @@ const Home = () => {
   const [isExtraCollectionShowing, setIsExtraCollectionShowing] =
     useState(false);
   const [activitiesModal, setActivitiesModal] = useState(false);
+  const [limitOrderModal, setLimitOrderModal] = useState(false);
+  const [instantSellModal, setInstantSellModal] = useState(false);
   gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, CSSRulePlugin);
 
   const goToFAQs = () => {
@@ -101,6 +103,10 @@ const Home = () => {
   };
   const closeActivitiesModal = () => setActivitiesModal(false);
   const openActivitiesModal = () => setActivitiesModal(true);
+  const closeLimitOrderModal = () => setLimitOrderModal(false);
+  const openLimitOrderModal = () => setLimitOrderModal(true);
+  const closeInstantSellModal = () => setInstantSellModal(false);
+  const openInstantSellModal = () => setInstantSellModal(true);
 
   return (
     <div className="extract-app">
@@ -335,7 +341,7 @@ const Home = () => {
                               className="horizontal-slider"
                               thumbClassName="example-thumb"
                               trackClassName="example-track"
-                              defaultValue={[0, 10]}
+                              defaultValue={[0, 7]}
                               ariaLabel={["Lower thumb", "Upper thumb"]}
                               ariaValuetext={(state) =>
                                 `Thumb value ${state.valueNow}`
@@ -346,7 +352,8 @@ const Home = () => {
                                 </div>
                               )}
                               pearling
-                              minDistance={0}
+                              min={0}
+                              max={10}
                             />
                           </div>
                         </Accordion.Body>
@@ -365,8 +372,13 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <button className="fill-grd-btn">Limit order</button>
-                <button className="outline-grd-btn">
+                <button onClick={openLimitOrderModal} className="fill-grd-btn">
+                  Limit order
+                </button>
+                <button
+                  onClick={openInstantSellModal}
+                  className="outline-grd-btn"
+                >
                   <div>
                     <span className="grd-text">Instant Sell</span>
                   </div>
@@ -794,6 +806,495 @@ const Home = () => {
                 </div>
               </div>
             </section>
+          </div>
+        </Modal.Body>
+      </Modal>
+
+      <Modal
+        show={limitOrderModal}
+        onHide={closeLimitOrderModal}
+        centered
+        className={isDarkTheme ? "dark-theme" : "light-theme"}
+      >
+        <Modal.Body>
+          <div className="limitorder-modal">
+            <div className="lo-head">
+              <h5>Choose your type of limit order</h5>
+              <div onClick={closeLimitOrderModal}>
+                <BsX />
+              </div>
+            </div>
+            <div className="lo-body">
+              <Tab.Container defaultActiveKey="buy" transition={false}>
+                <Nav variant="pills">
+                  <Nav.Item>
+                    <Nav.Link eventKey="buy">Buy</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="sell">Sell</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+                <Tab.Content>
+                  <Tab.Pane eventKey="buy">
+                    <div className="lo-buy">
+                      <div className="cpp">
+                        <h6>Current Pool Prize</h6>
+                        <span>95 ₳</span>
+                      </div>
+                      <div className="cs-grid-box">
+                        <h6>Collection stats</h6>
+                        <div className="cs-grid">
+                          <div className="cs-left">
+                            <p>
+                              <span>TVL:</span>
+                            </p>
+                            <p>90.1886 ₳</p>
+                            <p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </p>
+                          </div>
+                          <div className="cs-left">
+                            <p>
+                              <span>Volume:</span>
+                            </p>
+                            <p>
+                              3.897 ₳ <span>/7d</span>
+                            </p>
+                            <p>
+                              12.899 ₳ <span>/24h</span>
+                            </p>
+                          </div>
+                          <div className="cs-right">
+                            <p>
+                              <span>Number of NFTs</span>
+                            </p>
+                            <ReactSlider
+                              className="horizontal-slider"
+                              thumbClassName="example-thumb"
+                              trackClassName="example-track"
+                              defaultValue={[0, 15]}
+                              ariaLabel={["Lower thumb", "Upper thumb"]}
+                              ariaValuetext={(state) =>
+                                `Thumb value ${state.valueNow}`
+                              }
+                              renderThumb={(props, state) => (
+                                <div {...props}>
+                                  <span>{state.valueNow}</span>
+                                </div>
+                              )}
+                              pearling
+                              min={0}
+                              max={20}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="obp-grid">
+                        <div className="input-box-1">
+                          <label htmlFor="">Order buy price</label>
+                          <input type="text" defaultValue={0} />
+                        </div>
+                        <h6>
+                          <i>Total sales amount:</i>
+                          <span>800 ₳</span>
+                        </h6>
+                      </div>
+                      <div className="lo-p">
+                        Buy limit orders allow you to place un-executed trades
+                        at lower prices. If the pool reaches that price your
+                        trade will be executed and you will buy at a lower
+                        price.
+                      </div>
+                      <div className="lo-btn-grid">
+                        <button className="fill-grd-btn">Buy</button>
+                        <button
+                          className="outline-grd-btn"
+                          onClick={closeLimitOrderModal}
+                        >
+                          <div>
+                            <span className="grd-text">Cancel</span>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="sell">
+                    <div className="lo-buy">
+                      <div className="cpp">
+                        <h6>Current Pool Prize</h6>
+                        <span>95 ₳</span>
+                      </div>
+                      <div className="cs-grid-box">
+                        <div className="lo-nft-grid">
+                          <div className="lo-nft-grid-left">
+                            <img src={CollectionImg1} alt="" />
+                            <h3>#8093</h3>
+                          </div>
+                          <div className="lo-nft-grid-right">
+                            <p>
+                              <span>Other NFTs from this collection</span>
+                            </p>
+                            <div className="lo-swiper">
+                              <Swiper
+                                modules={[Pagination, Navigation]}
+                                speed={500}
+                                spaceBetween={0}
+                                slidesPerView={"4.5"}
+                                className="mySwiper"
+                              >
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo1"
+                                    />
+                                    <label htmlFor="lo1">
+                                      <img
+                                        src={CollectionImg2}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo2"
+                                    />
+                                    <label htmlFor="lo2">
+                                      <img
+                                        src={CollectionImg3}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo3"
+                                    />
+                                    <label htmlFor="lo3">
+                                      <img
+                                        src={CollectionImg4}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo4"
+                                    />
+                                    <label htmlFor="lo4">
+                                      <img
+                                        src={CollectionImg5}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo5"
+                                    />
+                                    <label htmlFor="lo5">
+                                      <img
+                                        src={CollectionImg6}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo6"
+                                    />
+                                    <label htmlFor="lo6">
+                                      <img
+                                        src={CollectionImg7}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo7"
+                                    />
+                                    <label htmlFor="lo7">
+                                      <img
+                                        src={CollectionImg8}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                              </Swiper>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cs-grid">
+                          <div className="cs-left">
+                            <p>
+                              <span>TVL:</span>
+                            </p>
+                            <p>90.1886 ₳</p>
+                            <p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </p>
+                          </div>
+                          <div className="cs-left">
+                            <p>
+                              <span>Volume:</span>
+                            </p>
+                            <p>
+                              3.897 ₳ <span>/7d</span>
+                            </p>
+                            <p>
+                              12.899 ₳ <span>/24h</span>
+                            </p>
+                          </div>
+                          <div className="cs-right">
+                            <p>
+                              <span>Number of NFTs</span>
+                            </p>
+                            <ReactSlider
+                              className="horizontal-slider"
+                              thumbClassName="example-thumb"
+                              trackClassName="example-track"
+                              defaultValue={[0, 15]}
+                              ariaLabel={["Lower thumb", "Upper thumb"]}
+                              ariaValuetext={(state) =>
+                                `Thumb value ${state.valueNow}`
+                              }
+                              renderThumb={(props, state) => (
+                                <div {...props}>
+                                  <span>{state.valueNow}</span>
+                                </div>
+                              )}
+                              pearling
+                              min={0}
+                              max={20}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="obp-grid">
+                        <div className="input-box-1">
+                          <label htmlFor="">Order buy price</label>
+                          <input type="text" defaultValue={0} />
+                        </div>
+                        <h6>
+                          <i>Total sales amount:</i>
+                          <span>800 ₳</span>
+                        </h6>
+                      </div>
+                      <div className="lo-p">
+                        Buy limit orders allow you to place un-executed trades
+                        at lower prices. If the pool reaches that price your
+                        trade will be executed and you will buy at a lower
+                        price.
+                      </div>
+                      <div className="lo-btn-grid">
+                        <button className="fill-grd-btn">Buy</button>
+                        <button
+                          className="outline-grd-btn"
+                          onClick={closeLimitOrderModal}
+                        >
+                          <div>
+                            <span className="grd-text">Cancel</span>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+
+      <Modal
+        show={instantSellModal}
+        onHide={closeInstantSellModal}
+        centered
+        className={isDarkTheme ? "dark-theme" : "light-theme"}
+      >
+        <Modal.Body>
+          <div className="instantsell-modal">
+            <div className="lo-head">
+              <h5>Instant sell</h5>
+              <div onClick={closeInstantSellModal}>
+                <BsX />
+              </div>
+            </div>
+            <div className="is-body">
+              <div className="is-textbox">
+                <h6>Pool price</h6>
+                <span>128 ₳</span>
+              </div>
+              <div className="is-textbox">
+                <h6>Total value</h6>
+                <span>128 ₳</span>
+              </div>
+              <div className="is-img-grid-box">
+                <div className="is-img-grid">
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is1" />
+                    <label htmlFor="is1">
+                      <img src={CollectionImg1} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is2" />
+                    <label htmlFor="is2">
+                      <img src={CollectionImg2} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is3" />
+                    <label htmlFor="is3">
+                      <img src={CollectionImg3} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is4" />
+                    <label htmlFor="is4">
+                      <img src={CollectionImg4} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is5" />
+                    <label htmlFor="is5">
+                      <img src={CollectionImg5} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is6" />
+                    <label htmlFor="is6">
+                      <img src={CollectionImg6} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is7" />
+                    <label htmlFor="is7">
+                      <img src={CollectionImg7} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is8" />
+                    <label htmlFor="is8">
+                      <img src={CollectionImg8} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is9" />
+                    <label htmlFor="is9">
+                      <img src={CollectionImg9} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is10" />
+                    <label htmlFor="is10">
+                      <img src={CollectionImg10} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is11" />
+                    <label htmlFor="is11">
+                      <img src={CollectionImg1} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is12" />
+                    <label htmlFor="is12">
+                      <img src={CollectionImg2} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is13" />
+                    <label htmlFor="is13">
+                      <img src={CollectionImg3} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is14" />
+                    <label htmlFor="is14">
+                      <img src={CollectionImg4} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                  <div className="is-img-box">
+                    <input type="checkbox" name="Instant Image" id="is15" />
+                    <label htmlFor="is15">
+                      <img src={CollectionImg5} alt="CollectionImg" />
+                      <p>#8032</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="is-4-grid">
+                <div className="is-textbox">
+                  <h6>Selected NFTs</h6>
+                  <span>3</span>
+                </div>
+                <div className="is-textbox">
+                  <h6>Extract fee</h6>
+                  <span>0.3 ₳</span>
+                </div>
+                <div className="is-textbox">
+                  <h6>ADA value </h6>
+                  <span>12 ₳</span>
+                </div>
+                <div className="is-textbox">
+                  <h6>Total ADA</h6>
+                  <span>12.3 ₳</span>
+                </div>
+              </div>
+              <div className="lo-btn-grid">
+                <button className="fill-grd-btn">Buy</button>
+                <button
+                  onClick={closeInstantSellModal}
+                  className="outline-grd-btn"
+                >
+                  <div>
+                    <span className="grd-text">Cancel</span>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </Modal.Body>
       </Modal>

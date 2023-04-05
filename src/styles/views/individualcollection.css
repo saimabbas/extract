@@ -436,8 +436,8 @@
   width: 100%;
 }
 .nft-tag {
-  background-color: var(--main-bg-6);
-  color: var(--text-color-2);
+  background-color: #fff;
+  color: #000;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;
