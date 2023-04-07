@@ -3,6 +3,7 @@ import HeaderLogo1 from "../assets/img/logo-1.png";
 import HeaderLogo2 from "../assets/img/logo-2.png";
 import "../styles/views/home.css";
 import { ThemeContext } from "../ThemeContext";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
@@ -17,7 +18,7 @@ const Footer = () => {
           )}
           <div className="footer-center">
             <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <Link to="/termsofservice">Terms of Service</Link>
           </div>
           <p>Extract 2023 © All rights reserved</p>
         </div>

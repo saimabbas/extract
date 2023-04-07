@@ -20,6 +20,7 @@ import SelectNFTs from "./views/SelectNFTs";
 import Inventory from "./views/Inventory";
 import IndividualCollection from "./views/IndividualCollection";
 import Withdraw from "./views/Withdraw";
+import TermsOfService from "./views/TermsOfService";
 import { ThemeContext } from "./ThemeContext";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             element={<IndividualCollection />}
           />
           <Route exact path="/withdraw" element={<Withdraw />} />
+          <Route exact path="/termsofservice" element={<TermsOfService />} />
         </Routes>
       </Switch>
     </div>
