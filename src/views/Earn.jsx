@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 // Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -57,6 +57,8 @@ import { Link } from "react-router-dom";
 
 const Collections = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  const [isExtraCollectionShowing, setIsExtraCollectionShowing] =
+    useState(false);
   return (
     <div className="extract-app">
       <div className="home-page">
@@ -110,7 +112,13 @@ const Collections = () => {
         </section>
         <section className="liquidity-tools-section">
           <div className="box">
-            <h2>Popular liquidity pools</h2>
+            <div className="lt-top">
+              <h2>Popular liquidity pools</h2>
+              <div className="search-input-box">
+                <BsSearch />
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
             <div className="plt-table">
               <div className="activity-table collections-table">
                 <table>
@@ -484,13 +492,396 @@ const Collections = () => {
                         </Link>
                       </td>
                     </tr>
+
+                    {isExtraCollectionShowing ? (
+                      <>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="activity-index">
+                              <img src={ActivityImg1} alt="ActivityImg1" />
+                              <h6>Graphic</h6>
+                            </div>
+                          </td>
+                          <td>90.1886 ₳</td>
+                          <td>
+                            <div className="collections-tvl">
+                              <p>90.1886 ₳</p>
+                              <span>112 NFTs + 3.897 ₳</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div className="collections-volume">
+                              <p>
+                                3.897 ₳ <span> / 7d</span>
+                              </p>
+                              <p>
+                                12.899 ₳ <span> / 24h</span>
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <Link to="/setdeposittype">
+                              <button className="outline-grd-btn">
+                                <div>
+                                  <span className="grd-text">
+                                    Provide Liquidity
+                                  </span>
+                                </div>
+                              </button>
+                            </Link>
+                          </td>
+                        </tr>
+                      </>
+                    ) : null}
                     <div className="plp-btn">
                       <div>
-                        <button className="outline-grd-btn">
-                          <div>
-                            <span className="grd-text">Show more</span>
-                          </div>
-                        </button>
+                        {isExtraCollectionShowing ? (
+                          <button
+                            onClick={() => {
+                              setIsExtraCollectionShowing(false);
+                            }}
+                            className="outline-grd-btn"
+                          >
+                            <div>
+                              <span className="grd-text">Show less</span>
+                            </div>
+                          </button>
+                        ) : (
+                          <button
+                            onClick={() => {
+                              setIsExtraCollectionShowing(true);
+                            }}
+                            className="outline-grd-btn"
+                          >
+                            <div>
+                              <span className="grd-text">Show more</span>
+                            </div>
+                          </button>
+                        )}
                       </div>
                     </div>
                   </tbody>

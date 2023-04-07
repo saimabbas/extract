@@ -121,31 +121,31 @@ const Home = () => {
         </section>
         <section className="home-slider">
           <div className="box">
-            <div className="home-slider-grid">
-              <div className="home-slider-prev">
-                <BsChevronLeft />
-              </div>
-              <div className="home-slider-next">
-                <BsChevronRight />
-              </div>
-              <div className="home-slider-grid-left">
-                <Swiper
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination, Navigation]}
-                  speed={500}
-                  loop={"true"}
-                  spaceBetween={50}
-                  slidesPerView={"1"}
-                  centeredSlides={"true"}
-                  className="mySwiper"
-                  navigation={{
-                    nextEl: ".home-slider-next",
-                    prevEl: ".home-slider-prev",
-                  }}
-                >
-                  <SwiperSlide>
+            <Swiper
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination, Navigation]}
+              speed={500}
+              loop={"true"}
+              spaceBetween={50}
+              slidesPerView={"1"}
+              centeredSlides={"true"}
+              className="mySwiper"
+              navigation={{
+                nextEl: ".home-slider-next",
+                prevEl: ".home-slider-prev",
+              }}
+            >
+              <SwiperSlide>
+                <div className="home-slider-grid">
+                  <div className="home-slider-prev">
+                    <BsChevronLeft />
+                  </div>
+                  <div className="home-slider-next">
+                    <BsChevronRight />
+                  </div>
+                  <div className="home-slider-grid-left">
                     <div className="home-slider-content">
                       <span className="slider-tag">Collection</span>
                       <h2>
@@ -170,8 +170,115 @@ const Home = () => {
                         <button className="fill-grd-btn">Explore</button>
                       </Link>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
+                  </div>
+                  <div className="home-slider-grid-right">
+                    <div className="three-sliders-grid">
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg1} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg2} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg3} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg4} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg5} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg6} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg7} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg8} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg9} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list-reverse">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg13} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg14} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg15} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg1} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg2} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg3} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg4} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg5} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg6} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg7} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg8} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg9} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="home-slider-grid">
+                  <div className="home-slider-prev">
+                    <BsChevronLeft />
+                  </div>
+                  <div className="home-slider-next">
+                    <BsChevronRight />
+                  </div>
+                  <div className="home-slider-grid-left">
                     <div className="home-slider-content">
                       <span className="slider-tag">Collection</span>
                       <h2>
@@ -197,8 +304,115 @@ const Home = () => {
                         <button className="fill-grd-btn">Explore</button>
                       </Link>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
+                  </div>
+                  <div className="home-slider-grid-right">
+                    <div className="three-sliders-grid">
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg1} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg2} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg3} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg4} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg5} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg6} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg7} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg8} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg9} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list-reverse">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg13} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg14} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg15} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg1} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg2} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg3} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg4} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg5} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg6} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg7} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg8} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg9} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="home-slider-grid">
+                  <div className="home-slider-prev">
+                    <BsChevronLeft />
+                  </div>
+                  <div className="home-slider-next">
+                    <BsChevronRight />
+                  </div>
+                  <div className="home-slider-grid-left">
                     <div className="home-slider-content">
                       <span className="slider-tag">Collection</span>
                       <h2>
@@ -225,107 +439,107 @@ const Home = () => {
                         <button className="fill-grd-btn">Explore</button>
                       </Link>
                     </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-              <div className="home-slider-grid-right">
-                <div className="three-sliders-grid">
-                  <div className="ts-marquee-container">
-                    <div className="ts-marquee-list">
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg1} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg2} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg3} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg4} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg5} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg6} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg7} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg8} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg9} alt="HomeSliderImg1" />
-                      </div>
-                    </div>
                   </div>
-                  <div className="ts-marquee-container">
-                    <div className="ts-marquee-list-reverse">
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                  <div className="home-slider-grid-right">
+                    <div className="three-sliders-grid">
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg1} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg2} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg3} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg4} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg5} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg6} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg7} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg8} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg9} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
                       </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list-reverse">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg13} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg14} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg15} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg1} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg2} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg3} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
                       </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg12} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg13} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg14} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg15} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg1} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg2} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg3} alt="HomeSliderImg1" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ts-marquee-container">
-                    <div className="ts-marquee-list">
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg4} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg5} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg6} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg7} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg8} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg9} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg10} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg11} alt="HomeSliderImg1" />
-                      </div>
-                      <div className="tsgc-img-box">
-                        <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                      <div className="ts-marquee-container">
+                        <div className="ts-marquee-list">
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg4} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg5} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg6} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg7} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg8} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg9} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg10} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg11} alt="HomeSliderImg1" />
+                          </div>
+                          <div className="tsgc-img-box">
+                            <img src={MarqueeImg12} alt="HomeSliderImg1" />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </section>
         <section className="collections">

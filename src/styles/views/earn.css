@@ -246,11 +246,23 @@
 .plp-btn .outline-grd-btn div .grd-text {
   font-size: 1.75rem;
 }
-.liquidity-tools-section .box > h2 {
+.lt-top h2 {
   font-size: 3.5rem;
   color: var(--text-color-1);
   font-weight: 700;
+  width: 100%;
+}
+.lt-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin: 0 0 2.5rem 0;
+}
+.lt-top .search-input-box {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 0 2.5rem;
 }
 .prog-box {
   width: 100%;

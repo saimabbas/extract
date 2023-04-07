@@ -46,7 +46,7 @@ const InventoryCard = () => {
         <Modal.Body>
           <div className="sale-nft-modal">
             <div className="modal-head">
-              <h2>Sale NFT</h2>
+              <h2>Sell NFT</h2>
               <div onClick={closeSaleNFTModal}>
                 <BsX />
               </div>
@@ -66,14 +66,10 @@ const InventoryCard = () => {
               <h6>Extract fee:</h6>
               <p>1.80 ₳</p>
             </div>
-            <div className="cd-text-box">
-              <h6>Amount received:</h6>
-              <p>120.00 ₳</p>
-            </div>
             <div className="cd-line"></div>
             <div className="cd-text-box">
-              <h6>Pool price:</h6>
-              <span>19.40 ₳</span>
+              <h6>Amount received:</h6>
+              <span>120.00 ₳</span>
             </div>
             <div className="dc-btn-grid">
               <button className="fill-grd-btn">

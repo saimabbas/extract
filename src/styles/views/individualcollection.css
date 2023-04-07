@@ -126,7 +126,7 @@
 }
 .ic-grid-left {
   width: 100%;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
   background-color: var(--main-bg-2);
   border: 1px solid var(--border-color-1);
   box-shadow: var(--box-shadow-1);

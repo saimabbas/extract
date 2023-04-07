@@ -550,8 +550,8 @@ section .box {
   width: 100%;
   /*   display: grid;
   grid-template-columns: 1fr 1fr; */
-  display: flex;
-  align-items: flex-start;
+  /* display: flex;
+  align-items: flex-start; */
 
   grid-gap: 2.5rem;
 }
@@ -562,7 +562,7 @@ section .box {
   justify-content: flex-start;
 }
 .lo-nft-grid-right {
-  width: 50%;
+  width: 100%;
 }
 .lo-nft-grid-left img {
   width: 11.5rem;

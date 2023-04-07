@@ -67,6 +67,7 @@ import {
   BsChevronDown,
   BsChevronLeft,
   BsChevronRight,
+  BsDiscord,
   BsFacebook,
   BsTelegram,
   BsTwitter,
@@ -124,13 +125,10 @@ const Home = () => {
                   <h2>The Ape Society</h2>
                   <div className="ictd-socials">
                     <a href="#">
-                      <FaTelegramPlane />
-                    </a>
-                    <a href="#">
                       <BsTwitter />
                     </a>
                     <a href="#">
-                      <BsFacebook />
+                      <BsDiscord />
                     </a>
                   </div>
                 </div>
@@ -194,7 +192,7 @@ const Home = () => {
                         <Accordion.Body>
                           <div className="ic-acc-body">
                             <div className="ic-check-select-box">
-                              <p>All</p>
+                              <p>Epic</p>
                               <div className="ic-checkbox">
                                 <input
                                   type="checkbox"
@@ -217,6 +215,36 @@ const Home = () => {
                                   id="ic2"
                                 />
                                 <label htmlFor="ic2">
+                                  <div className="icc-check">
+                                    <BsCheck />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="ic-check-select-box">
+                              <p>Common</p>
+                              <div className="ic-checkbox">
+                                <input
+                                  type="checkbox"
+                                  name="Individuial Collection"
+                                  id="ic3"
+                                />
+                                <label htmlFor="ic3">
+                                  <div className="icc-check">
+                                    <BsCheck />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="ic-check-select-box">
+                              <p>Uncommon</p>
+                              <div className="ic-checkbox">
+                                <input
+                                  type="checkbox"
+                                  name="Individuial Collection"
+                                  id="ic4"
+                                />
+                                <label htmlFor="ic4">
                                   <div className="icc-check">
                                     <BsCheck />
                                   </div>
@@ -360,7 +388,7 @@ const Home = () => {
                       </Accordion.Item>
                     </Accordion>
                   </div>
-                  <div className="ic-check-select-box">
+                  {/* <div className="ic-check-select-box">
                     <p>By ownership</p>
                     <div className="ic-checkbox">
                       <input type="checkbox" name="Ownership" id="o1" />
@@ -370,7 +398,7 @@ const Home = () => {
                         </div>
                       </label>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <button onClick={openLimitOrderModal} className="fill-grd-btn">
                   Limit order
@@ -926,20 +954,20 @@ const Home = () => {
                       </div>
                       <div className="cs-grid-box">
                         <div className="lo-nft-grid">
-                          <div className="lo-nft-grid-left">
+                          {/* <div className="lo-nft-grid-left">
                             <img src={CollectionImg1} alt="" />
                             <h3>#8093</h3>
-                          </div>
+                          </div> */}
                           <div className="lo-nft-grid-right">
                             <p>
-                              <span>Other NFTs from this collection</span>
+                              <span>Choose NFTs to sell</span>
                             </p>
                             <div className="lo-swiper">
                               <Swiper
                                 modules={[Pagination, Navigation]}
                                 speed={500}
-                                spaceBetween={0}
-                                slidesPerView={"4.5"}
+                                spaceBetween={50}
+                                slidesPerView={"10"}
                                 className="mySwiper"
                               >
                                 <SwiperSlide>
@@ -1047,6 +1075,112 @@ const Home = () => {
                                     </label>
                                   </div>
                                 </SwiperSlide>
+
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo8"
+                                    />
+                                    <label htmlFor="lo8">
+                                      <img
+                                        src={CollectionImg2}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo9"
+                                    />
+                                    <label htmlFor="lo9">
+                                      <img
+                                        src={CollectionImg3}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo10"
+                                    />
+                                    <label htmlFor="lo10">
+                                      <img
+                                        src={CollectionImg4}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo11"
+                                    />
+                                    <label htmlFor="lo11">
+                                      <img
+                                        src={CollectionImg5}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo12"
+                                    />
+                                    <label htmlFor="lo12">
+                                      <img
+                                        src={CollectionImg6}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo13"
+                                    />
+                                    <label htmlFor="lo13">
+                                      <img
+                                        src={CollectionImg7}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                  <div className="lo-swiper-img">
+                                    <input
+                                      type="checkbox"
+                                      name="NFT Images"
+                                      id="lo14"
+                                    />
+                                    <label htmlFor="lo14">
+                                      <img
+                                        src={CollectionImg8}
+                                        alt="CollectionImg"
+                                      />
+                                    </label>
+                                  </div>
+                                </SwiperSlide>
                               </Swiper>
                             </div>
                           </div>
@@ -1108,9 +1242,9 @@ const Home = () => {
                         </h6>
                       </div>
                       <div className="lo-p">
-                        Buy limit orders allow you to place un-executed trades
-                        at lower prices. If the pool reaches that price your
-                        trade will be executed and you will buy at a lower
+                        Sell limit orders allow you to place un-executed trades
+                        at higher prices. If the pool reaches that price your
+                        trade will be executed and you will sell at a higher
                         price.
                       </div>
                       <div className="lo-btn-grid">

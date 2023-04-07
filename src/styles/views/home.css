@@ -330,6 +330,12 @@
   grid-template-rows: auto;
   grid-gap: 2.5rem;
 }
+.collections-grid > a {
+  width: 100%;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+}
 .collections-card {
   width: 100%;
   min-width: 0;
@@ -593,6 +599,10 @@
   color: var(--text-color-1);
   font-size: 1.5rem;
   opacity: 0.75;
+}
+.accordion-body p a {
+  color: #fff;
+  text-decoration: underline;
 }
 .accordion-button::after {
   display: none;

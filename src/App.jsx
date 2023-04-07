@@ -9,7 +9,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import LinksPage from "./views/Links";
-import Home from "./views/Home";
+import Home from "./views/Home2";
 import Favourites from "./views/Favourites";
 import RecentTrades from "./views/RecentTrades";
 import Collections from "./views/Collections";
