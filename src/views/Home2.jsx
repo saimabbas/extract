@@ -215,7 +215,11 @@ const Home = () => {
                       </p>
                       <div className="slider-text-grid">
                         <div>
-                          <p>Floor price</p>
+                          <p>Buy price</p>
+                          <h6>29 ₳</h6>
+                        </div>
+                        <div>
+                          <p>Instant sell price</p>
                           <h6>29 ₳</h6>
                         </div>
                       </div>
@@ -238,7 +242,11 @@ const Home = () => {
                       </p>
                       <div className="slider-text-grid">
                         <div>
-                          <p>Floor price</p>
+                          <p>Buy price</p>
+                          <h6>249 ₳</h6>
+                        </div>
+                        <div>
+                          <p>Instant sell price</p>
                           <h6>249 ₳</h6>
                         </div>
                       </div>
@@ -262,7 +270,11 @@ const Home = () => {
                       </p>
                       <div className="slider-text-grid">
                         <div>
-                          <p>Floor price</p>
+                          <p>Buy price</p>
+                          <h6>14 ₳</h6>
+                        </div>
+                        <div>
+                          <p>Instant sell price</p>
                           <h6>14 ₳</h6>
                         </div>
                       </div>
