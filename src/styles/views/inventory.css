@@ -164,3 +164,66 @@
   font-size: 1.75rem;
   font-weight: 600;
 }
+@media screen and (max-width: 1000px) {
+  .inventory-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tas-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .tas-left {
+    margin: 2.5rem 0 0 0;
+  }
+  .tas-values-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tas-values-box > a {
+    margin: 2.5rem 0 0 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .inventory-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tas-values-box {
+    grid-template-columns: 1fr;
+  }
+  .tas-values-box > div {
+    margin: 0 0 1.5rem 0;
+  }
+  .tas-values-box > a {
+    margin: 0;
+    width: 100%;
+  }
+  .tas-values-box > a button,
+  .tas-values-box > a button div {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .tas-grid {
+    grid-template-columns: 1fr;
+  }
+  .address-box p {
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tas-values-box div {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 550px) {
+  .inventory-grid {
+    grid-template-columns: 1fr;
+  }
+  .tas-content img {
+    width: 100%;
+    height: max-content;
+  }
+}

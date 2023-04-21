@@ -13,6 +13,7 @@
   max-width: 100%;
   margin: 0;
   position: relative;
+  z-index: 200;
 }
 .collections-top .search-input-box img {
   width: 2.5rem;
@@ -75,6 +76,7 @@
 .collections-tvl span {
   opacity: 0.65;
   font-size: 1.25rem;
+  color: var(--text-color-1);
 }
 .collections-volume p {
   margin: 0;
@@ -94,4 +96,50 @@
 .activity-table.collections-table table tbody > a {
   display: table-row;
   width: 100%;
+}
+.collections-grid-mob .activity-card-mob {
+  margin: 0 0 1rem 0;
+}
+.collections-grid-mob {
+  display: none;
+}
+.clc-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0 0 0;
+}
+@media screen and (max-width: 950px) {
+  .collections-top {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .activity-grid-right p,
+  .collections-tvl,
+  .collections-volume p {
+    text-align: right;
+  }
+  .collections-tvl span {
+    font-size: 1.65rem;
+  }
+  .trade-blob-1 {
+    width: max-content;
+    height: 100vh;
+  }
+  .collections-grid-mob {
+    display: block;
+  }
+  .sib-settings {
+    width: 100%;
+    transform: translate(0, 102.5%);
+  }
+  .collections-grid-mob + button,
+  .collections-grid-mob + button div {
+    width: 100%;
+  }
+  .collections-grid-mob + button {
+    margin: 2.5rem 0 0 0;
+  }
 }

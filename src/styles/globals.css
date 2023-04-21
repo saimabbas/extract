@@ -28,15 +28,16 @@
 .extract-app {
   width: 100%;
   min-height: 100vh;
+  padding: 7rem 0 0 0;
 }
 html,
 body {
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   background-color: var(--main-bg);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
 /* body::-webkit-scrollbar {
   background-color: var(--main-bg);
   width: 10px;
@@ -72,6 +73,7 @@ section .box {
 .search-input-box {
   width: 100%;
   max-width: 17.5rem;
+  min-width: 17.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -92,7 +94,7 @@ section .box {
   outline: 0;
   border: 0;
   padding: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   color: var(--text-color-1);
   font-weight: 300;
 }
@@ -107,9 +109,9 @@ section .box {
   transition: 0.35s;
   position: relative;
   overflow: hidden;
-  background-color: transparent;
+  background: linear-gradient(135deg, #00ffff, #4579f5);
 }
-.outline-grd-btn::before {
+/* .outline-grd-btn::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -120,7 +122,7 @@ section .box {
   z-index: 5;
   transition: 0.5s;
   transform: rotate(0) scale(1);
-}
+} */
 /* .outline-grd-btn:hover::before {
   transform: rotate(90deg) scale(1);
 } */
@@ -284,6 +286,7 @@ section .box {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .extract-fee {
   font-size: 1.5rem;
@@ -657,4 +660,85 @@ section .box {
 .is-4-grid .is-textbox h6 {
   opacity: 0.65;
   font-size: 1.65rem;
+}
+.activities-modal {
+  display: none;
+}
+@media screen and (max-width: 1325px) {
+  .box {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .search-input-box {
+    margin: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .extract-app {
+    padding: 6rem 0 0 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .modal-body {
+    padding: 2rem !important;
+  }
+  .cart-modal {
+    min-width: unset;
+    max-width: unset;
+  }
+  .cart-table .activity-index p {
+    margin: 1rem 0 0 0;
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .modal-body {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .modal-dialog {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2.5rem;
+  }
+  .modal-content {
+    width: 100% !important;
+  }
+  .activities-modal {
+    display: none;
+  }
+  .activities-modal-mob {
+    display: block;
+    width: 100%;
+  }
+  .activity-modal-body .modal-head {
+    padding: 2.5rem;
+  }
+  .activities-modal-mob .activity-card-mob {
+    border-radius: 0;
+    box-shadow: unset;
+    border-bottom: 0;
+  }
+  .sale-nft-modal {
+    min-width: unset;
+  }
+  .sale-nft-profile img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1.5rem 0 0;
+  }
+  .sale-nft-profile div h3 {
+    font-size: 2rem;
+  }
+  .modal-head h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .box {
+    padding: 0 2rem;
+  }
 }

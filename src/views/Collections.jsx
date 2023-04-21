@@ -54,8 +54,11 @@ import {
   BsX,
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import CollectionsCardMob from "../components/CollectionsCardMob";
 
 const Collections = () => {
+  const [isExtraCollectionShowing, setIsExtraCollectionShowing] =
+    useState(false);
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   return (
@@ -812,6 +815,53 @@ const Collections = () => {
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div className="collections-grid-mob">
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              <CollectionsCardMob />
+              {isExtraCollectionShowing ? (
+                <>
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                  <CollectionsCardMob />
+                </>
+              ) : null}
+            </div>
+            <div className="clc-btn">
+              {isExtraCollectionShowing ? (
+                <button
+                  className="outline-grd-btn"
+                  onClick={() => {
+                    setIsExtraCollectionShowing(false);
+                  }}
+                >
+                  <div>
+                    <span className="grd-text">Show less</span>
+                  </div>
+                </button>
+              ) : (
+                <button
+                  className="outline-grd-btn"
+                  onClick={() => {
+                    setIsExtraCollectionShowing(true);
+                  }}
+                >
+                  <div>
+                    <span className="grd-text">Show more</span>
+                  </div>
+                </button>
+              )}
             </div>
           </div>
         </section>

@@ -33,6 +33,7 @@ import HomeBlob5 from "../assets/img/home-blob-5.png";
 import SellIcon from "../assets/img/sell-icon.svg";
 import BuyIcon from "../assets/img/buy-icon.svg";
 import FaqImg from "../assets/img/faq-img.png";
+import FaqImgMob from "../assets/img/faq-img-mob.png";
 import CollectionImg1 from "../assets/img/collection/collection-img-1.png";
 import CollectionImg2 from "../assets/img/collection/collection-img-2.png";
 import CollectionImg3 from "../assets/img/collection/collection-img-3.png";
@@ -131,6 +132,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { Link } from "react-router-dom";
 import "swiper/css/effect-fade";
+import ActivityCardMob from "../components/ActivityCardMob";
 
 const Home = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
@@ -203,6 +205,40 @@ const Home = () => {
                   }}
                 >
                   <SwiperSlide>
+                    <div className="ts-marquee-container-mob">
+                      <div className="ts-marquee-list-mob">
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis1} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis2} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis3} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis4} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis5} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis6} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis7} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis8} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis9} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Genesis10} alt="HomeSliderImg1" />
+                        </div>
+                      </div>
+                    </div>
                     <div className="home-slider-content">
                       <span className="slider-tag">Collection</span>
                       <h2>
@@ -229,6 +265,40 @@ const Home = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
+                    <div className="ts-marquee-container-mob">
+                      <div className="ts-marquee-list-mob">
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP1} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP2} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP3} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP4} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP5} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP6} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP7} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP8} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP9} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={VIP10} alt="HomeSliderImg1" />
+                        </div>
+                      </div>
+                    </div>
                     <div className="home-slider-content">
                       <span className="slider-tag">Collection</span>
                       <h2>
@@ -256,6 +326,40 @@ const Home = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
+                    <div className="ts-marquee-container-mob">
+                      <div className="ts-marquee-list-mob">
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible1} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible2} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible3} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible4} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible5} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible6} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible7} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible8} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible9} alt="HomeSliderImg1" />
+                        </div>
+                        <div className="tsgc-img-box-mob">
+                          <img src={Collectible10} alt="HomeSliderImg1" />
+                        </div>
+                      </div>
+                    </div>
                     <div className="home-slider-content">
                       <span className="slider-tag">Collection</span>
                       <h2>
@@ -287,9 +391,6 @@ const Home = () => {
               </div>
               <div className="home-slider-grid-right">
                 <Swiper
-                  pagination={{
-                    clickable: true,
-                  }}
                   modules={[Pagination, Navigation]}
                   speed={1000}
                   loop={"true"}
@@ -1118,10 +1219,45 @@ const Home = () => {
                   </tbody>
                 </table>
               </div>
+              <div className="activity-table-mob">
+                <Swiper speed={1000} spaceBetween={10} slidesPerView={"1.1"}>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ActivityCardMob />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </section>
         <section className="faq" id="faqs-section">
+          <img src={FaqImgMob} alt="FaqImg" />
           <div className="box">
             <div className="faq-grid">
               <img src={FaqImg} alt="FaqImg" />

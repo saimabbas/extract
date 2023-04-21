@@ -86,6 +86,7 @@ import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import NFTCard from "../components/NFTCard";
 import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
+import ActivityCardMob from "../components/ActivityCardMob";
 
 const Home = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
@@ -146,10 +147,6 @@ const Home = () => {
                     <p>5,176</p>
                   </div>
                   <div>
-                    <span>Volume, ADA</span>
-                    <p>5,176</p>
-                  </div>
-                  <div>
                     <span>Market cap</span>
                     <p>1,536,412 ₳</p>
                   </div>
@@ -161,6 +158,14 @@ const Home = () => {
                     <span>Sales, 24h</span>
                     <p>126</p>
                   </div>
+                </div>
+                <div className="ictd-socials">
+                  <a href="#">
+                    <BsTwitter />
+                  </a>
+                  <a href="#">
+                    <BsDiscord />
+                  </a>
                 </div>
               </div>
             </div>
@@ -413,6 +418,264 @@ const Home = () => {
                 </button>
               </div>
               <div className="ic-grid-right">
+                <div className="ic-acc ic-acc-mob">
+                  <Accordion>
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>
+                        <iv className="ic-cc-head">
+                          <Tab.Container
+                            defaultActiveKey="Buy"
+                            transition={true}
+                          >
+                            <Nav variant="pills">
+                              <Nav.Item>
+                                <Nav.Link eventKey="Buy">Buy</Nav.Link>
+                              </Nav.Item>
+                              <Nav.Item>
+                                <Nav.Link eventKey="Sell">Sell</Nav.Link>
+                              </Nav.Item>
+                            </Nav>
+                          </Tab.Container>
+                          <BsChevronDown />
+                        </iv>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <div className="input-box-1">
+                          <label htmlFor="">NFTS to buy</label>
+                          <input type="text" defaultValue={0} />
+                        </div>
+                        <div className="input-box-2">
+                          <label htmlFor="">Price: </label>
+                          <input type="text" defaultValue={0} />
+                        </div>
+                        <div className="ic-acc">
+                          <Accordion>
+                            <Accordion.Item eventKey="0">
+                              <Accordion.Header>
+                                <div className="ic-cc-head">
+                                  Rarity
+                                  <BsChevronDown />
+                                </div>
+                              </Accordion.Header>
+                              <Accordion.Body>
+                                <div className="ic-acc-body">
+                                  <div className="ic-check-select-box">
+                                    <p>Epic</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Individuial Collection"
+                                        id="ic1"
+                                      />
+                                      <label htmlFor="ic1">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div className="ic-check-select-box">
+                                    <p>Rare</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Individuial Collection"
+                                        id="ic2"
+                                      />
+                                      <label htmlFor="ic2">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div className="ic-check-select-box">
+                                    <p>Common</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Individuial Collection"
+                                        id="ic3"
+                                      />
+                                      <label htmlFor="ic3">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div className="ic-check-select-box">
+                                    <p>Uncommon</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Individuial Collection"
+                                        id="ic4"
+                                      />
+                                      <label htmlFor="ic4">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </Accordion.Body>
+                            </Accordion.Item>
+                          </Accordion>
+                        </div>
+                        <div className="ic-acc">
+                          <Accordion>
+                            <Accordion.Item eventKey="0">
+                              <Accordion.Header>
+                                <div className="ic-cc-head">
+                                  Price
+                                  <BsChevronDown />
+                                </div>
+                              </Accordion.Header>
+                              <Accordion.Body>
+                                <div className="ic-acc-body">
+                                  <div className="icc-input-grid">
+                                    <input type="text" />
+                                    <input type="text" />
+                                  </div>
+
+                                  <ReactSlider
+                                    className="horizontal-slider"
+                                    thumbClassName="example-thumb"
+                                    trackClassName="example-track"
+                                    defaultValue={[0, 100]}
+                                    ariaLabel={["Lower thumb", "Upper thumb"]}
+                                    ariaValuetext={(state) =>
+                                      `Thumb value ${state.valueNow}`
+                                    }
+                                    renderThumb={(props, state) => (
+                                      <div {...props}>
+                                        <span>{state.valueNow}</span>
+                                      </div>
+                                    )}
+                                    pearling
+                                    minDistance={0}
+                                  />
+                                </div>
+                              </Accordion.Body>
+                            </Accordion.Item>
+                          </Accordion>
+                        </div>
+                        <div className="ic-acc">
+                          <Accordion>
+                            <Accordion.Item eventKey="0">
+                              <Accordion.Header>
+                                <div className="ic-cc-head">
+                                  Traits
+                                  <BsChevronDown />
+                                </div>
+                              </Accordion.Header>
+                              <Accordion.Body>
+                                <div className="ic-acc-body">
+                                  <div className="ic-check-select-box">
+                                    <p>Rebels</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Traits"
+                                        id="t1"
+                                      />
+                                      <label htmlFor="t1">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div className="ic-check-select-box">
+                                    <p>Enforcers</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Traits"
+                                        id="t2"
+                                      />
+                                      <label htmlFor="t2">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div className="ic-check-select-box">
+                                    <p>Resistance</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Traits"
+                                        id="t3"
+                                      />
+                                      <label htmlFor="t3">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div className="ic-check-select-box">
+                                    <p>Operators</p>
+                                    <div className="ic-checkbox">
+                                      <input
+                                        type="checkbox"
+                                        name="Traits"
+                                        id="t4"
+                                      />
+                                      <label htmlFor="t4">
+                                        <div className="icc-check">
+                                          <BsCheck />
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </Accordion.Body>
+                            </Accordion.Item>
+                          </Accordion>
+                        </div>
+                        <div className="ic-acc trait-count">
+                          <Accordion>
+                            <Accordion.Item eventKey="0">
+                              <Accordion.Header>
+                                <div className="ic-cc-head">
+                                  Trait count
+                                  <BsChevronDown />
+                                </div>
+                              </Accordion.Header>
+                              <Accordion.Body>
+                                <div className="ic-acc-body">
+                                  <ReactSlider
+                                    className="horizontal-slider"
+                                    thumbClassName="example-thumb"
+                                    trackClassName="example-track"
+                                    defaultValue={[0, 7]}
+                                    ariaLabel={["Lower thumb", "Upper thumb"]}
+                                    ariaValuetext={(state) =>
+                                      `Thumb value ${state.valueNow}`
+                                    }
+                                    renderThumb={(props, state) => (
+                                      <div {...props}>
+                                        <span>{state.valueNow}</span>
+                                      </div>
+                                    )}
+                                    pearling
+                                    min={0}
+                                    max={10}
+                                  />
+                                </div>
+                              </Accordion.Body>
+                            </Accordion.Item>
+                          </Accordion>
+                        </div>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </div>
                 <div className="icgr-top">
                   <select>
                     <option>Sort by</option>
@@ -834,6 +1097,21 @@ const Home = () => {
                 </div>
               </div>
             </section>
+          </div>
+          <div className="activities-modal-mob">
+            <div className="modal-head">
+              <h2>Activities</h2>
+              <div onClick={closeActivitiesModal}>
+                <BsX />
+              </div>
+            </div>
+            <div className="amm-grid">
+              <ActivityCardMob />
+              <ActivityCardMob />
+              <ActivityCardMob />
+              <ActivityCardMob />
+              <ActivityCardMob />
+            </div>
           </div>
         </Modal.Body>
       </Modal>
