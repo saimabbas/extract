@@ -265,6 +265,10 @@ header {
 }
 .header-right-mob svg {
   font-size: 2rem;
+  color: var(--text-color-1);
+}
+.header-mob .header-right-mob svg {
+  font-size: 2rem;
   color: #fff;
 }
 .header-right-mob > div > img {
