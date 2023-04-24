@@ -1,6 +1,6 @@
 .earn-head-section {
   width: 100%;
-  margin: 5rem 0 7.5rem 0;
+  padding: 5rem 0 7.5rem 0;
 }
 .earn-head {
   width: 100%;
@@ -132,7 +132,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   margin: 2.5rem 0 0 0;
 }
 .dc-btn-grid > button,
@@ -192,7 +192,6 @@
   left: 0;
   z-index: 40;
   opacity: 0;
-  /* transition: opacity 0.35s; */
 }
 .deposits-card:hover .deposits-card-bg {
   opacity: 1;
@@ -218,6 +217,9 @@
 .dark-theme .deposits-card:hover .outline-grd-btn div {
   background-color: transparent;
   border: 1px solid #fff;
+}
+.dark-theme .deposits-card:hover .outline-grd-btn {
+  background: none;
 }
 .dark-theme .deposits-card:hover .outline-grd-btn .grd-text {
   color: #fff;
@@ -280,9 +282,6 @@
   align-items: center;
   margin: 0 5rem 0 0;
 }
-.prog-step > svg {
-  display: none;
-}
 .prog-step p {
   font-size: 1.75rem;
   color: #fff;
@@ -292,9 +291,10 @@
   font-size: 3rem;
   margin: 0 1.5rem 0 0;
   color: #fff;
+  opacity: 0;
 }
 .prog-step.prog-step-active > svg {
-  display: block;
+  opacity: 1;
 }
 .prog-step.prog-step-active {
   opacity: 1;
@@ -659,4 +659,126 @@
   top: -150%;
   font-size: 1.25rem;
   color: var(--text-color-1);
+}
+.plt-grid .activity-card-mob {
+  margin: 0 0 1.5rem 0;
+}
+.plt-grid .activity-card-mob > a,
+.plt-grid .activity-card-mob > a button,
+.plt-grid .activity-card-mob > a button div {
+  width: 100%;
+}
+.plt-grid {
+  display: none;
+}
+.pl-btn-box {
+  width: 27rem !important;
+}
+@media screen and (max-width: 1250px) {
+  .your-deposits-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .selectnfts-grid {
+    grid-template-columns: 1fr;
+  }
+  .your-deposits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .yds-head {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .yds-head-right > * {
+    margin: 0 2.5rem 0 0;
+  }
+  .lt-top {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .lt-top .search-input-box {
+    margin: 1.5rem 0 0 0;
+  }
+  .plt-grid {
+    display: block;
+  }
+  .earn-head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .prog-step.prog-step-active {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .prog-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .prog-step svg {
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .prog-step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .prog-step p {
+    font-size: 1.5rem;
+  }
+  .recenttrades-section.newdeposit-section .nav-item {
+    width: 100%;
+  }
+  .recenttrades-section.newdeposit-section .nav-item a {
+    width: 100%;
+    text-align: center;
+  }
+  .recenttrades-section.newdeposit-section .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+  .sdt-box {
+    width: 100%;
+    max-width: 100%;
+  }
+  .yds-head-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    width: 100%;
+  }
+  .yds-head-right a button {
+    width: 100%;
+  }
+  .yds-head-right > * {
+    margin: 0;
+    width: 100%;
+  }
+  .yds-info-box {
+    justify-content: space-between;
+  }
+  .your-deposits-grid {
+    grid-template-columns: 1fr;
+  }
+  .earn-head img {
+    width: 10rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .earn-head-section {
+    padding: 5rem 0;
+  }
 }

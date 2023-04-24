@@ -54,6 +54,7 @@ import {
 } from "react-icons/bs";
 import DepositsCard from "../components/DepositsCard";
 import { Link } from "react-router-dom";
+import LiquidityPoolsCard from "../components/LiquidityPoolsCard";
 
 const Collections = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
@@ -128,7 +129,7 @@ const Collections = () => {
                       <th>Balance</th>
                       <th>Deposit</th>
                       <th>Volume</th>
-                      <th></th>
+                      <th className="pl-btn-box"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -156,7 +157,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -192,7 +193,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -228,7 +229,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -264,7 +265,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -300,7 +301,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -336,7 +337,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -372,7 +373,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -408,7 +409,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -444,7 +445,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -480,7 +481,7 @@ const Collections = () => {
                           </p>
                         </div>
                       </td>
-                      <td>
+                      <td className="pl-btn-box">
                         <Link to="/setdeposittype">
                           <button className="outline-grd-btn">
                             <div>
@@ -886,6 +887,55 @@ const Collections = () => {
                     </div>
                   </tbody>
                 </table>
+              </div>
+            </div>
+            <div className="plt-grid">
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              <LiquidityPoolsCard />
+              {isExtraCollectionShowing ? (
+                <>
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                  <LiquidityPoolsCard />
+                </>
+              ) : null}
+            </div>
+            <div className="plp-btn">
+              <div>
+                {isExtraCollectionShowing ? (
+                  <button
+                    onClick={() => {
+                      setIsExtraCollectionShowing(false);
+                    }}
+                    className="outline-grd-btn"
+                  >
+                    <div>
+                      <span className="grd-text">Show less</span>
+                    </div>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setIsExtraCollectionShowing(true);
+                    }}
+                    className="outline-grd-btn"
+                  >
+                    <div>
+                      <span className="grd-text">Show more</span>
+                    </div>
+                  </button>
+                )}
               </div>
             </div>
           </div>

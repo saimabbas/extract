@@ -27,6 +27,7 @@ import TradeBlob1 from "../assets/img/trade-blob-1.png";
 import Footer from "../components/Footer";
 import { ThemeContext } from "../ThemeContext";
 import { gsap } from "gsap";
+import RecentTradesCard from "../components/RecentTradesCard";
 
 const RecentTrades = () => {
   gsap.fromTo(
@@ -410,6 +411,16 @@ const RecentTrades = () => {
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div className="recenttrades-grid-mob">
+              <RecentTradesCard />
+              <RecentTradesCard />
+              <RecentTradesCard />
+              <RecentTradesCard />
+              <RecentTradesCard />
+              <RecentTradesCard />
+              <RecentTradesCard />
+              <RecentTradesCard />
             </div>
           </div>
         </section>

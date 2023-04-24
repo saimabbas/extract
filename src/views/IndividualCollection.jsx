@@ -1244,8 +1244,8 @@ const Home = () => {
                               <Swiper
                                 modules={[Pagination, Navigation]}
                                 speed={500}
-                                spaceBetween={50}
-                                slidesPerView={"10"}
+                                spaceBetween={15}
+                                slidesPerView={"auto"}
                                 className="mySwiper"
                               >
                                 <SwiperSlide>

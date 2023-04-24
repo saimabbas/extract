@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 // Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -56,9 +56,11 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import DepositsCard from "../components/DepositsCard";
-
+import NewDepositCardMob from "../components/NewDepositCardMob";
 const NewDeposit = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  const [isExtraCollectionShowing, setIsExtraCollectionShowing] =
+    useState(false);
   return (
     <div className="extract-app">
       <div className="home-page">
@@ -508,6 +510,55 @@ const NewDeposit = () => {
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div className="newdeposit-grid">
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              <NewDepositCardMob />
+              {isExtraCollectionShowing ? (
+                <>
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                  <NewDepositCardMob />
+                </>
+              ) : null}
+            </div>
+            <div className="plp-btn">
+              <div>
+                {isExtraCollectionShowing ? (
+                  <button
+                    onClick={() => {
+                      setIsExtraCollectionShowing(false);
+                    }}
+                    className="outline-grd-btn"
+                  >
+                    <div>
+                      <span className="grd-text">Show less</span>
+                    </div>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setIsExtraCollectionShowing(true);
+                    }}
+                    className="outline-grd-btn"
+                  >
+                    <div>
+                      <span className="grd-text">Show more</span>
+                    </div>
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </section>

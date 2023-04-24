@@ -110,6 +110,29 @@
   justify-content: center;
   margin: 2.5rem 0 0 0;
 }
+.recenttrades-grid-mob .activity-card-mob {
+  margin: 0 0 1.5rem 0;
+}
+.newdeposit-grid {
+  display: none;
+}
+.newdeposit-grid > a {
+  margin: 0 0 1.5rem 0;
+  display: block;
+}
+.newdeposit-grid .activity-card-mob > a,
+.newdeposit-grid .activity-card-mob > a button,
+.newdeposit-grid .activity-card-mob > a button div {
+  width: 100%;
+}
+@media screen and (max-width: 1250px) {
+  .newdeposit-grid {
+    display: block;
+  }
+  .newdeposit-section .activity-table.collections-table {
+    display: none;
+  }
+}
 @media screen and (max-width: 950px) {
   .collections-top {
     grid-template-columns: 1fr;

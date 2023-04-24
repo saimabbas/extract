@@ -579,8 +579,12 @@ section .box {
   color: var(--text-color-1);
   margin: 0 0 0 1.5rem;
 }
+.lo-swiper .swiper-slide {
+  width: min-content;
+}
 .lo-swiper-img {
-  width: max-content;
+  width: 6.5rem;
+  height: 6.5rem;
 }
 .lo-swiper-img input {
   display: none;
@@ -661,7 +665,10 @@ section .box {
   opacity: 0.65;
   font-size: 1.65rem;
 }
-.activities-modal {
+.green-color {
+  color: #00ffaa !important;
+}
+.activities-modal-mob {
   display: none;
 }
 @media screen and (max-width: 1325px) {
@@ -677,6 +684,12 @@ section .box {
 @media screen and (max-width: 1150px) {
   .extract-app {
     padding: 6rem 0 0 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .limitorder-modal,
+  .instantsell-modal {
+    width: 100%;
   }
 }
 @media screen and (max-width: 950px) {
@@ -700,6 +713,7 @@ section .box {
   }
   .modal-dialog {
     width: 100% !important;
+    max-width: 100% !important;
     margin: 0 !important;
     padding: 2.5rem;
   }
@@ -740,5 +754,29 @@ section .box {
 @media screen and (max-width: 750px) {
   .box {
     padding: 0 2rem;
+  }
+  .lo-btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+  }
+  .lo-btn-grid button,
+  .lo-btn-grid button div {
+    width: 100%;
+  }
+  .cs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cs-grid .cs-right {
+    grid-column: 1/-1;
+  }
+  .obp-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .obp-grid .input-box-1 {
+    width: 100%;
   }
 }
