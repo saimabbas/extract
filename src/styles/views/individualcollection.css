@@ -1,6 +1,6 @@
 .ic-top {
   width: 100%;
-  margin: 5rem 0 3.5rem 0;
+  padding: 5rem 0 3.5rem 0;
 }
 .ic-top-content {
   width: 100%;
@@ -524,6 +524,9 @@
   .ic-grid-left-box {
     display: none;
   }
+  .ic-grid-left-box.ic-grid-left-box-2 {
+    display: flex;
+  }
   .icgr-top {
     grid-template-columns: 1fr;
   }
@@ -581,6 +584,6 @@
     padding: 2rem;
   }
   .ic-top {
-    margin: 3.5rem 0;
+    padding: 3.5rem 0;
   }
 }
