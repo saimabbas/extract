@@ -7,7 +7,7 @@ import ThemeContext from "./ThemeContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeContext>
-    <App className="abc" />
+    <App />
   </ThemeContext>
 );
 

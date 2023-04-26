@@ -52,7 +52,7 @@ header {
   width: max-content;
   display: flex;
   align-items: center;
-  margin: 0 2.5rem;
+  margin: 0 2rem;
   cursor: pointer;
 }
 .header-right .connect-wallet-link img {
@@ -66,13 +66,13 @@ header {
 .header-right .icon-link {
   font-size: 1.75rem;
   color: var(--text-color-1);
-  margin: 0 3rem 0 0;
+  margin: 0 2rem 0 0;
   cursor: pointer;
 }
 .cart-icon-link {
   font-size: 1.75rem;
   color: var(--text-color-1);
-  margin: 0 3rem 0 0;
+  margin: 0 2rem 0 0;
   cursor: pointer;
   position: relative;
 }
@@ -126,7 +126,7 @@ header {
 }
 .cart-dropdown {
   width: max-content;
-  margin: 0 3rem 0 0;
+  margin: 0 2rem 0 0;
 }
 .cart-dropdown a {
   margin: 0;
@@ -339,11 +339,17 @@ header {
   color: #fff;
   font-size: 2.5rem;
 }
-.hmb-socials a:first-child {
-  margin: 0 2rem 0 0;
+.hmb-socials a:nth-child(2) {
+  margin: 0 2rem;
 }
 .header-mob-bottom .light-dark-theme-box {
   margin: 2.5rem 0 0 0;
+}
+.header-mob-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1250px) {
   .header-right .icon-link {

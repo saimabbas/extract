@@ -668,7 +668,8 @@
 .plt-grid .activity-card-mob > a button div {
   width: 100%;
 }
-.plt-grid {
+.plt-grid,
+.plp-btn-mob {
   display: none;
 }
 .pl-btn-box {
@@ -677,6 +678,12 @@
 @media screen and (max-width: 1250px) {
   .your-deposits-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 950px) {
+  .plt-grid,
+  .plp-btn-mob {
+    display: block;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -701,9 +708,6 @@
   }
   .lt-top .search-input-box {
     margin: 1.5rem 0 0 0;
-  }
-  .plt-grid {
-    display: block;
   }
   .earn-head {
     flex-direction: column;

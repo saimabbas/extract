@@ -911,7 +911,7 @@ const Collections = () => {
                 </>
               ) : null}
             </div>
-            <div className="plp-btn">
+            <div className="plp-btn plp-btn-mob">
               <div>
                 {isExtraCollectionShowing ? (
                   <button

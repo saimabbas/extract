@@ -43,6 +43,7 @@ import {
   BsGridFill,
   BsXDiamond,
   BsXCircle,
+  BsYoutube,
 } from "react-icons/bs";
 import { ThemeContext } from "../ThemeContext";
 import { Link, useLocation } from "react-router-dom";
@@ -158,7 +159,14 @@ const Header = (props) => {
                 <div className="hmb-socials">
                   <a
                     target={"_blank"}
-                    href="https://twitter.com/TCCCNFT"
+                    href="https://www.youtube.com/channel/UCABWWBlZPxJjXtBUZpDSnQQ"
+                    className="icon-link"
+                  >
+                    <BsYoutube />
+                  </a>
+                  <a
+                    target={"_blank"}
+                    href="https://twitter.com/ExtractDEX"
                     className="icon-link"
                   >
                     <BsTwitter />
@@ -257,7 +265,14 @@ const Header = (props) => {
             <div className="header-right">
               <a
                 target={"_blank"}
-                href="https://twitter.com/TCCCNFT"
+                href="https://www.youtube.com/channel/UCABWWBlZPxJjXtBUZpDSnQQ"
+                className="icon-link"
+              >
+                <BsYoutube />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://twitter.com/ExtractDEX"
                 className="icon-link"
               >
                 <BsTwitter />

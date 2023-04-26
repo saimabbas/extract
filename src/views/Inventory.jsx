@@ -41,7 +41,7 @@ const Collections = () => {
                 <div className="tas-grid">
                   <div className="tas-grid-card">
                     <label htmlFor="">Balance</label>
-                    <input type="text" defaultValue={"24.40 ₳"} />
+                    <input type="text" defaultValue={"24.40 ₳"} disabled />
                   </div>
                   <div className="tas-grid-card">
                     <label htmlFor="">Address</label>

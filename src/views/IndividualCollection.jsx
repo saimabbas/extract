@@ -683,7 +683,7 @@ const Home = () => {
                     <option value="2">Price (high to low)</option>
                     <option value="3">Recently listed</option>
                     <option value="4">Rarity (rare to common)</option>
-                    <option value="5">Rarity (common to rate)</option>
+                    <option value="5">Rarity (common to rare)</option>
                   </select>
                   <Link to="/inventory">
                     <button className="outline-grd-btn">
@@ -1526,7 +1526,7 @@ const Home = () => {
                         price.
                       </div>
                       <div className="lo-btn-grid">
-                        <button className="fill-grd-btn">Buy</button>
+                        <button className="fill-grd-btn">Sell</button>
                         <button
                           className="outline-grd-btn"
                           onClick={closeLimitOrderModal}
@@ -1696,7 +1696,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="lo-btn-grid">
-                <button className="fill-grd-btn">Buy</button>
+                <button className="fill-grd-btn">Sell</button>
                 <button
                   onClick={closeInstantSellModal}
                   className="outline-grd-btn"

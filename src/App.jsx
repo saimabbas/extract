@@ -22,12 +22,14 @@ import IndividualCollection from "./views/IndividualCollection";
 import Withdraw from "./views/Withdraw";
 import TermsOfService from "./views/TermsOfService";
 import { ThemeContext } from "./ThemeContext";
+import ScrollToTop from "./ScrollToTopCode";
 
 function App() {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   return (
     <div className={isDarkTheme ? "dark-theme" : "light-theme"}>
       <Switch>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/links" element={<LinksPage />} />
           <Route exact path="/" element={<Home />} />

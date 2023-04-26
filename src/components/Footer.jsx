@@ -17,7 +17,6 @@ const Footer = () => {
             <img src={HeaderLogo2} alt="HeaderLogo" />
           )}
           <div className="footer-center">
-            <a href="#">Privacy Policy</a>
             <Link to="/termsofservice">Terms of Service</Link>
           </div>
           <p>Extract 2023 © All rights reserved</p>

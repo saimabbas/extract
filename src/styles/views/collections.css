@@ -60,6 +60,7 @@
 }
 .collections-top .nav.nav-pills {
   width: 100%;
+  display: flex;
 }
 .collections-top .nav-link {
   padding: 1.25rem 2rem;
@@ -125,6 +126,9 @@
 .newdeposit-grid .activity-card-mob > a button div {
   width: 100%;
 }
+.collection-heart-mob {
+  margin: 0 0 1rem 0;
+}
 @media screen and (max-width: 1250px) {
   .newdeposit-grid {
     display: block;
@@ -164,5 +168,18 @@
   }
   .collections-grid-mob + button {
     margin: 2.5rem 0 0 0;
+  }
+
+  .collections-top .nav.nav-pills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .collections-top .nav.nav-pills .nav-item {
+    width: 100%;
+  }
+  .collections-top .nav-link {
+    padding: 1.25rem 0;
+    text-align: center;
   }
 }
