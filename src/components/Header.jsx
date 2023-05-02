@@ -179,7 +179,7 @@ const Header = (props) => {
                     <BsDiscord />
                   </a>
                 </div>
-                <div className="light-dark-theme-box">
+                {/* <div className="light-dark-theme-box">
                   {isDarkTheme ? (
                     <div
                       className="theme-icon"
@@ -218,7 +218,7 @@ const Header = (props) => {
                       <BsMoon />
                     </div>
                   )}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -341,7 +341,7 @@ const Header = (props) => {
               <Link to="/favourites" className="cart-icon-link">
                 <BsHeartFill />
               </Link>
-              <div className="light-dark-theme-box">
+              {/* <div className="light-dark-theme-box">
                 {isDarkTheme ? (
                   <div
                     className="theme-icon"
@@ -380,7 +380,7 @@ const Header = (props) => {
                     <BsMoon />
                   </div>
                 )}
-              </div>
+              </div> */}
               <p className="connect-wallet-link" onClick={openConnectWallet}>
                 <img src={ConnectWalletImg} alt="ConnectWalletImg" />
                 <span className="grd-text">Connect</span>

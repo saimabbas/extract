@@ -94,7 +94,7 @@ const Collections = () => {
                 <div className="yds-info-box">
                   <p>Pending fees:</p> <span>0 ₳</span>
                 </div>
-                <Link to="/setdeposittype">
+                <Link to="/newdeposit">
                   <button className="fill-grd-btn">Provide liquidity</button>
                 </Link>
               </div>

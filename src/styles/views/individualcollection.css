@@ -488,6 +488,13 @@
 .ic-acc-mob {
   display: none;
 }
+.ic-acc .accordion-body > button,
+.ic-acc .accordion-body > button div {
+  width: 100%;
+}
+.ic-acc .accordion-body > button.fill-grd-btn {
+  margin: 0 0 1.5rem 0;
+}
 @media screen and (max-width: 1150px) {
   .ictd-grid {
     grid-gap: 2.5rem;
@@ -585,5 +592,11 @@
   }
   .ic-top {
     padding: 3.5rem 0;
+  }
+  .is-img-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .is-4-grid {
+    grid-template-columns: 1fr;
   }
 }

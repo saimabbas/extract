@@ -57,6 +57,7 @@ import {
 } from "react-icons/bs";
 import DepositsCard from "../components/DepositsCard";
 import NewDepositCardMob from "../components/NewDepositCardMob";
+import CollectionsTableRow from "../components/CollectionsTableRow";
 const NewDeposit = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   const [isExtraCollectionShowing, setIsExtraCollectionShowing] =
@@ -154,9 +155,10 @@ const NewDeposit = () => {
               </Tab.Container>
             </div>
             <div className="activity-table collections-table">
-              <table>
+              <table className="collections-with-heart">
                 <thead>
                   <tr>
+                    <th></th>
                     <th>Collection</th>
                     <th>TVL</th>
                     <th>Buy Price</th>
@@ -167,347 +169,32 @@ const NewDeposit = () => {
                     <th>Change,24h</th>
                   </tr>
                 </thead>
+
                 <tbody>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg1} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg2} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg3} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg4} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg5} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg6} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg7} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg8} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg9} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="activity-index">
-                        <img src={ActivityImg10} alt="ActivityImg1" />
-                        <h6>Graphic</h6>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="collections-tvl">
-                        <p>90.1886 ₳</p>
-                        <span>112 NFTs + 3.897 ₳</span>
-                      </div>
-                    </td>
-                    <td>90.1886 ₳</td>
-                    <td>87.1296 ₳</td>
-                    <td>
-                      <div className="collections-volume">
-                        <p>
-                          3.897 ₳ <span> / 7d</span>
-                        </p>
-                        <p>
-                          12.899 ₳ <span> / 24h</span>
-                        </p>
-                      </div>
-                    </td>
-                    <td>9,890</td>
-                    <td>10% (989)</td>
-                    <td>
-                      <div className="collections-change">
-                        <BsArrowUpRight />
-                        63.55%
-                      </div>
-                    </td>
-                  </tr>
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  <CollectionsTableRow />
+                  {isExtraCollectionShowing ? (
+                    <>
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                    </>
+                  ) : null}
                 </tbody>
               </table>
             </div>

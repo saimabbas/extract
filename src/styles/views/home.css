@@ -35,6 +35,7 @@
   top: 0vh;
   left: 0;
   z-index: 10;
+  max-height: 275rem;
 }
 .home-blob-4 {
   height: max-content;

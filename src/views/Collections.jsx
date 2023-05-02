@@ -318,7 +318,7 @@ const Collections = () => {
                     <th>Change,24h</th>
                   </tr>
                 </thead>
-                <tbody >
+                <tbody>
                   <CollectionsTableRow />
                   <CollectionsTableRow />
                   <CollectionsTableRow />
@@ -329,6 +329,20 @@ const Collections = () => {
                   <CollectionsTableRow />
                   <CollectionsTableRow />
                   <CollectionsTableRow />
+                  {isExtraCollectionShowing ? (
+                    <>
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                      <CollectionsTableRow />
+                    </>
+                  ) : null}
                 </tbody>
               </table>
             </div>
@@ -388,3 +402,11 @@ const Collections = () => {
 };
 
 export default Collections;
+
+/* 
+instant sell popup
+privacy policy page
+fonts / colors
+adding heart icons on different cards on desktop and mobile
+slider on home page
+*/

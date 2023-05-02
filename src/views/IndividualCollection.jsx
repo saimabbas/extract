@@ -423,7 +423,7 @@ const Home = () => {
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>
                         <iv className="ic-cc-head">
-                          <Tab.Container
+                          {/* <Tab.Container
                             defaultActiveKey="Buy"
                             transition={true}
                           >
@@ -435,7 +435,8 @@ const Home = () => {
                                 <Nav.Link eventKey="Sell">Sell</Nav.Link>
                               </Nav.Item>
                             </Nav>
-                          </Tab.Container>
+                          </Tab.Container> */}
+                          Filters
                           <BsChevronDown />
                         </iv>
                       </Accordion.Header>
@@ -672,6 +673,20 @@ const Home = () => {
                             </Accordion.Item>
                           </Accordion>
                         </div>
+                        <button
+                          onClick={openLimitOrderModal}
+                          className="fill-grd-btn"
+                        >
+                          Limit order
+                        </button>
+                        <button
+                          onClick={openInstantSellModal}
+                          className="outline-grd-btn"
+                        >
+                          <div>
+                            <span className="grd-text">Instant Sell</span>
+                          </div>
+                        </button>
                       </Accordion.Body>
                     </Accordion.Item>
                   </Accordion>
@@ -1144,7 +1159,7 @@ const Home = () => {
                   <Tab.Pane eventKey="buy">
                     <div className="lo-buy">
                       <div className="cpp">
-                        <h6>Current Pool Prize</h6>
+                        <h6>Current Pool Price</h6>
                         <span>95 ₳</span>
                       </div>
                       <div className="cs-grid-box">
